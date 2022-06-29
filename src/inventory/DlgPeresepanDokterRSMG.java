@@ -305,6 +305,7 @@ public final class DlgPeresepanDokterRSMG extends javax.swing.JDialog {
         BtnSimpan = new widget.Button();
         BtnKeluar = new widget.Button();
         FormInput = new widget.PanelBiasa();
+        TPenjab = new widget.TextBox();
         TNoRw = new widget.TextBox();
         TPasien = new widget.TextBox();
         KdDokter = new widget.TextBox();
@@ -321,6 +322,7 @@ public final class DlgPeresepanDokterRSMG extends javax.swing.JDialog {
         cmbDtk = new widget.ComboBox();
         ChkRM = new widget.CekBox();
         ChkJln = new widget.CekBox();
+        label13 = new widget.Label();
         TabRawat = new javax.swing.JTabbedPane();
         Scroll = new widget.ScrollPane();
         tbResep = new widget.Table();
@@ -491,6 +493,16 @@ public final class DlgPeresepanDokterRSMG extends javax.swing.JDialog {
         FormInput.setPreferredSize(new java.awt.Dimension(440, 107));
         FormInput.setLayout(null);
 
+        TPenjab.setHighlighter(null);
+        TPenjab.setName("TPenjab"); // NOI18N
+        TPenjab.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                TPenjabKeyPressed(evt);
+            }
+        });
+        FormInput.add(TPenjab);
+        TPenjab.setBounds(520, 40, 130, 23);
+
         TNoRw.setHighlighter(null);
         TNoRw.setName("TNoRw"); // NOI18N
         TNoRw.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -571,7 +583,7 @@ public final class DlgPeresepanDokterRSMG extends javax.swing.JDialog {
         jLabel8.setBounds(0, 42, 72, 23);
 
         DTPBeri.setForeground(new java.awt.Color(50, 70, 50));
-        DTPBeri.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "17-06-2022" }));
+        DTPBeri.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "27-06-2022" }));
         DTPBeri.setDisplayFormat("dd-MM-yyyy");
         DTPBeri.setName("DTPBeri"); // NOI18N
         DTPBeri.setOpaque(false);
@@ -647,6 +659,12 @@ public final class DlgPeresepanDokterRSMG extends javax.swing.JDialog {
         });
         FormInput.add(ChkJln);
         ChkJln.setBounds(363, 42, 23, 23);
+
+        label13.setText("Jenis Bayar :");
+        label13.setName("label13"); // NOI18N
+        label13.setPreferredSize(new java.awt.Dimension(50, 23));
+        FormInput.add(label13);
+        label13.setBounds(410, 40, 100, 23);
 
         internalFrame1.add(FormInput, java.awt.BorderLayout.PAGE_START);
 
@@ -1164,11 +1182,14 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
         
         if(j==99){
                 JOptionPane.showMessageDialog(null,"Maksimal 98 Racikan..!!");
-            }else{
+        }else{
                 tabModeResep.addRow(new Object[]{""+j,"","",""});
-                
         }
     }//GEN-LAST:event_BtnTambah2ActionPerformed
+
+    private void TPenjabKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TPenjabKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TPenjabKeyPressed
 
     /**
     * @param args the command line arguments
@@ -1207,6 +1228,7 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     private widget.ScrollPane Scroll1;
     private widget.TextBox TNoRw;
     private widget.TextBox TPasien;
+    private widget.TextBox TPenjab;
     private javax.swing.JTabbedPane TabRawat;
     private widget.Button btnDokter;
     private widget.ComboBox cmbDtk;
@@ -1220,6 +1242,7 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     private widget.Label jLabel8;
     private javax.swing.JPanel jPanel3;
     private widget.Label label12;
+    private widget.Label label13;
     private widget.panelisi panelisi3;
     private javax.swing.JMenuItem ppBersihkan;
     private javax.swing.JMenuItem ppStok1;
@@ -1258,7 +1281,8 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
         TNoRw.setText(norwt);
         Sequel.cariIsi("select concat(pasien.no_rkm_medis,' ',pasien.nm_pasien) from reg_periksa inner join pasien "+
                     " on reg_periksa.no_rkm_medis=pasien.no_rkm_medis where no_rawat=? ",TPasien,TNoRw.getText());
-        
+        Sequel.cariIsi("select penjab.png_jawab from reg_periksa inner join penjab "+
+                    " on reg_periksa.kd_pj = penjab.kd_pj where reg_periksa.no_rawat=? ",TPenjab,TNoRw.getText());
         DTPBeri.setDate(tanggal);
         cmbJam.setSelectedItem(jam);
         cmbMnt.setSelectedItem(menit);
