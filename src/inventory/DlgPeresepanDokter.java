@@ -414,6 +414,7 @@ public final class DlgPeresepanDokter extends javax.swing.JDialog {
         BtnSeek5 = new widget.Button();
         BtnKeluar = new widget.Button();
         FormInput = new widget.PanelBiasa();
+        TPenjab = new widget.TextBox();
         TNoRw = new widget.TextBox();
         TPasien = new widget.TextBox();
         KdDokter = new widget.TextBox();
@@ -434,6 +435,7 @@ public final class DlgPeresepanDokter extends javax.swing.JDialog {
         LTotal = new widget.Label();
         jLabel7 = new widget.Label();
         LTotalTagihan = new widget.Label();
+        jLabel14 = new widget.Label();
         jLabel12 = new widget.Label();
         NamaResep = new widget.TextBox();
         ChkResep = new widget.CekBox();
@@ -660,6 +662,16 @@ public final class DlgPeresepanDokter extends javax.swing.JDialog {
         FormInput.setPreferredSize(new java.awt.Dimension(440, 107));
         FormInput.setLayout(null);
 
+        TPenjab.setHighlighter(null);
+        TPenjab.setName("TPenjab"); // NOI18N
+        TPenjab.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                TPenjabKeyPressed(evt);
+            }
+        });
+        FormInput.add(TPenjab);
+        TPenjab.setBounds(790, 40, 130, 23);
+
         TNoRw.setHighlighter(null);
         TNoRw.setName("TNoRw"); // NOI18N
         TNoRw.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -844,6 +856,11 @@ public final class DlgPeresepanDokter extends javax.swing.JDialog {
         LTotalTagihan.setPreferredSize(new java.awt.Dimension(80, 23));
         FormInput.add(LTotalTagihan);
         LTotalTagihan.setBounds(588, 42, 95, 23);
+
+        jLabel14.setText("Jenis Bayar :");
+        jLabel14.setName("jLabel14"); // NOI18N
+        FormInput.add(jLabel14);
+        jLabel14.setBounds(710, 40, 70, 23);
 
         jLabel12.setText("Nama Resep :");
         jLabel12.setName("jLabel12"); // NOI18N
@@ -1608,6 +1625,10 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
         }
     }//GEN-LAST:event_ChkResepItemStateChanged
 
+    private void TPenjabKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TPenjabKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TPenjabKeyPressed
+
     /**
     * @param args the command line arguments
     */
@@ -1653,6 +1674,7 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     private widget.TextBox TCari;
     private widget.TextBox TNoRw;
     private widget.TextBox TPasien;
+    private widget.TextBox TPenjab;
     private javax.swing.JTabbedPane TabRawat;
     private widget.Button btnDokter;
     private widget.ComboBox cmbDtk;
@@ -1662,6 +1684,7 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     private widget.Label jLabel11;
     private widget.Label jLabel12;
     private widget.Label jLabel13;
+    private widget.Label jLabel14;
     private widget.Label jLabel3;
     private widget.Label jLabel5;
     private widget.Label jLabel6;
@@ -1969,7 +1992,8 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
         TNoRw.setText(norwt);
         Sequel.cariIsi("select concat(pasien.no_rkm_medis,' ',pasien.nm_pasien) from reg_periksa inner join pasien "+
                     " on reg_periksa.no_rkm_medis=pasien.no_rkm_medis where no_rawat=? ",TPasien,TNoRw.getText());
-        
+        Sequel.cariIsi("select penjab.png_jawab from reg_periksa inner join penjab "+
+                    " on reg_periksa.kd_pj = penjab.kd_pj where reg_periksa.no_rawat=? ",TPenjab,TNoRw.getText());
         DTPBeri.setDate(tanggal);
         cmbJam.setSelectedItem(jam);
         cmbMnt.setSelectedItem(menit);
