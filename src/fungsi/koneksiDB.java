@@ -717,6 +717,16 @@ public class koneksiDB {
         return var;
     }
     
+    public static String TEMPLATERESEP(){
+        try{
+            prop.loadFromXML(new FileInputStream("setting/database.xml"));
+            var=prop.getProperty("RESEPFARMASI");
+        }catch(Exception e){
+            var=""; 
+        }
+        return var;
+    }
+    
     public static String CETAKRINCIANOBAT(){
         try{
             prop.loadFromXML(new FileInputStream("setting/database.xml"));
