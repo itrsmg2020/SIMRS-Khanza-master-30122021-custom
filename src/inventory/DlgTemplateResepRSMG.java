@@ -483,7 +483,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
                         " if(resep_template_rsmg.jam_peresepan=resep_template_rsmg.jam,'Belum Terlayani','Sudah Terlayani') as status,resep_template_rsmg.status as status_asal "+
                         " from resep_template_rsmg inner join reg_periksa inner join pasien inner join dokter on resep_template_rsmg.no_rawat=reg_periksa.no_rawat  "+
                         " and reg_periksa.no_rkm_medis=pasien.no_rkm_medis and resep_template_rsmg.kd_dokter=dokter.kd_dokter where "+
-                        " resep_template_rsmg.tgl_perawatan between ? and ?  and resep_template_rsmg.kd_dokter=? order by resep_template_rsmg.tgl_perawatan desc,resep_template_rsmg.jam desc");
+                        " resep_template_rsmg.tgl_perawatan between ? and ? and resep_template_rsmg.kd_dokter=? order by resep_template_rsmg.tgl_perawatan desc,resep_template_rsmg.jam desc");
                 }else{
                     ps=koneksi.prepareStatement("select resep_template_rsmg.no_resep,resep_template_rsmg.nm_resep,resep_template_rsmg.tgl_peresepan,resep_template_rsmg.jam_peresepan,"+
                         " resep_template_rsmg.no_rawat,pasien.no_rkm_medis,pasien.nm_pasien,resep_template_rsmg.kd_dokter,dokter.nm_dokter, "+
