@@ -49,7 +49,7 @@ public class DlgCariPeriksaRadiologi extends javax.swing.JDialog {
             Suspen_Piutang_Radiologi_Ralan="",Radiologi_Ralan="",Beban_Jasa_Medik_Dokter_Radiologi_Ralan="",Utang_Jasa_Medik_Dokter_Radiologi_Ralan="",
             Beban_Jasa_Medik_Petugas_Radiologi_Ralan="",Utang_Jasa_Medik_Petugas_Radiologi_Ralan="",Beban_Kso_Radiologi_Ralan="",Utang_Kso_Radiologi_Ralan="",
             HPP_Persediaan_Radiologi_Rawat_Jalan="",Persediaan_BHP_Radiologi_Rawat_Jalan="",Beban_Jasa_Sarana_Radiologi_Ralan="",Utang_Jasa_Sarana_Radiologi_Ralan="",
-            Beban_Jasa_Perujuk_Radiologi_Ralan="",Utang_Jasa_Perujuk_Radiologi_Ralan="",Beban_Jasa_Menejemen_Radiologi_Ralan="",Utang_Jasa_Menejemen_Radiologi_Ralan="";
+            Beban_Jasa_Perujuk_Radiologi_Ralan="",Utang_Jasa_Perujuk_Radiologi_Ralan="",Beban_Jasa_Menejemen_Radiologi_Ralan="",Utang_Jasa_Menejemen_Radiologi_Ralan="",perujuk_luar="";
 
     /** Creates new form DlgProgramStudi
      * @param parent
@@ -1537,7 +1537,12 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
             param.put("jkel",Jk.getText());
             param.put("umur",Umur.getText());
             param.put("lahir",Sequel.cariIsi("select DATE_FORMAT(tgl_lahir,'%d-%m-%Y') from pasien where no_rkm_medis=? ",NoRM.getText()));
-            param.put("pengirim",tbDokter.getValueAt(tbDokter.getSelectedRow(),5).toString());
+            perujuk_luar = Sequel.cariIsi("select rujuk_masuk.perujuk from reg_periksa inner join rujuk_masuk on rujuk_masuk.no_rawat = reg_periksa.no_rawat where reg_periksa.status_lanjut <> 'Ranap' and reg_periksa.no_rawat =?",NoRawat.getText());
+            if(!perujuk_luar.equals("")){
+                    param.put("pengirim", perujuk_luar);
+                }else{
+                    param.put("pengirim",tbDokter.getValueAt(tbDokter.getSelectedRow(),5).toString());
+                }
             param.put("tanggal",Valid.SetTgl3(tbDokter.getValueAt(tbDokter.getSelectedRow(),3).toString()));
             param.put("penjab",tbDokter.getValueAt(tbDokter.getSelectedRow(),6).toString());
             param.put("petugas",tbDokter.getValueAt(tbDokter.getSelectedRow(),2).toString());
