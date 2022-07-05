@@ -1537,7 +1537,7 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
             param.put("jkel",Jk.getText());
             param.put("umur",Umur.getText());
             param.put("lahir",Sequel.cariIsi("select DATE_FORMAT(tgl_lahir,'%d-%m-%Y') from pasien where no_rkm_medis=? ",NoRM.getText()));
-            perujuk_luar = Sequel.cariIsi("select rujuk_masuk.perujuk from reg_periksa inner join rujuk_masuk on rujuk_masuk.no_rawat = reg_periksa.no_rawat where reg_periksa.status_lanjut <> 'Ranap' and reg_periksa.no_rawat =?",NoRawat.getText());
+            perujuk_luar = Sequel.cariIsi("select rujuk_masuk.perujuk from reg_periksa inner join rujuk_masuk on rujuk_masuk.no_rawat = reg_periksa.no_rawat where reg_periksa.status_lanjut <> 'Ranap' and reg_periksa.no_rawat =?",tbDokter.getValueAt(tbDokter.getSelectedRow(),0).toString());
             if(!perujuk_luar.equals("")){
                     param.put("perujuk", perujuk_luar);
                 }else{
