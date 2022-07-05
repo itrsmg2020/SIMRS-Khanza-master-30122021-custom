@@ -2000,9 +2000,9 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     public void setNoRm(String norwt,Date tanggal, String jam,String menit,String detik,String KodeDokter,String NamaDokter,String status) {        
         TNoRw.setText(norwt);
         Sequel.cariIsi("select concat(pasien.no_rkm_medis,' ',pasien.nm_pasien) from reg_periksa inner join pasien "+
-                    " on reg_periksa.no_rkm_medis=pasien.no_rkm_medis where no_rawat=? ",TPasien,TNoRw.getText());
+                    "on reg_periksa.no_rkm_medis=pasien.no_rkm_medis where no_rawat=? ",TPasien,TNoRw.getText());
         Sequel.cariIsi("select penjab.png_jawab from reg_periksa inner join penjab "+
-                    " on reg_periksa.kd_pj = penjab.kd_pj where reg_periksa.no_rawat=? ",TPenjab,TNoRw.getText());
+                    "on reg_periksa.kd_pj = penjab.kd_pj where reg_periksa.no_rawat=? ",TPenjab,TNoRw.getText());
         DTPBeri.setDate(tanggal);
         cmbJam.setSelectedItem(jam);
         cmbMnt.setSelectedItem(menit);
@@ -2018,11 +2018,14 @@ private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     }
     
     public void setNoRm(String norwt,String KodeDokter,String NamaDokter,String Pasien,String kodepj,String status) {        
+        
         TNoRw.setText(norwt);
         TPasien.setText(Pasien);
         KdDokter.setText(KodeDokter);
         NmDokter.setText(NamaDokter);
         KdPj.setText(kodepj);
+        Sequel.cariIsi("select penjab.png_jawab from reg_periksa inner join penjab "+
+                        "on reg_periksa.kd_pj = penjab.kd_pj where reg_periksa.no_rawat=? ",TPenjab,TNoRw.getText());
         TCari.requestFocus();
         this.status=status;
         SetHarga();
