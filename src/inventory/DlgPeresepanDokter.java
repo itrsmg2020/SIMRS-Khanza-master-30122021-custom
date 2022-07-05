@@ -1176,23 +1176,26 @@ private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
                 if(sukses == true){
                     
                     if(ChkResep.isSelected() == true){
-                        Sequel.menyimpantf2("resep_template_rsmg","?,?,?,?,?,?,?,?,?","Nomer Resep",9,new String[]{
-                        NoResep.getText(),NamaResep.getText(),Valid.SetTgl(DTPBeri.getSelectedItem()+""),
-                        cmbJam.getSelectedItem()+":"+cmbMnt.getSelectedItem()+":"+cmbDtk.getSelectedItem(),
-                        TNoRw.getText(),KdDokter.getText(),Valid.SetTgl(DTPBeri.getSelectedItem()+""),
-                        cmbJam.getSelectedItem()+":"+cmbMnt.getSelectedItem()+":"+cmbDtk.getSelectedItem(),status
-                        });
+                        if(NamaResep.getText().trim().equals("")){
+                            JOptionPane.showMessageDialog(null,"Nama Resep Masih Kosong.\nTemplate Resep Tidak Tersimpan!!!");
+                        }else if(!NamaResep.getText().trim().equals("")){
+                            Sequel.menyimpantf2("resep_template_rsmg","?,?,?,?,?,?,?,?,?","Nomer Resep",9,new String[]{
+                                NoResep.getText(),NamaResep.getText(),Valid.SetTgl(DTPBeri.getSelectedItem()+""),
+                                cmbJam.getSelectedItem()+":"+cmbMnt.getSelectedItem()+":"+cmbDtk.getSelectedItem(),
+                                TNoRw.getText(),KdDokter.getText(),Valid.SetTgl(DTPBeri.getSelectedItem()+""),
+                                cmbJam.getSelectedItem()+":"+cmbMnt.getSelectedItem()+":"+cmbDtk.getSelectedItem(),status
+                                });
+                        }
                     }
                     
                     if(resepfarmasi.equals("yes")){
-
-                    DlgDaftarPermintaanResep daftar=new DlgDaftarPermintaanResep(null,false);
-                    daftar.emptTeks();
-                    daftar.isCek();
-                    daftar.setSize(internalFrame1.getWidth(),internalFrame1.getHeight());
-                    daftar.setLocationRelativeTo(internalFrame1);
-                    daftar.setNoRm(TNoRw.getText());
-                    daftar.setVisible(true);
+                        DlgDaftarPermintaanResep daftar=new DlgDaftarPermintaanResep(null,false);
+                        daftar.emptTeks();
+                        daftar.isCek();
+                        daftar.setSize(internalFrame1.getWidth(),internalFrame1.getHeight());
+                        daftar.setLocationRelativeTo(internalFrame1);
+                        daftar.setNoRm(TNoRw.getText());
+                        daftar.setVisible(true);
                     
                     }else{
 

@@ -5089,14 +5089,17 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
                     JOptionPane.showMessageDialog(null,"Maaf, data sudah habis...!!!!");
                     TNoRw.requestFocus();
                 }else{
-                    for(i=0;i<tbPemeriksaan.getRowCount();i++){
+                    int reply = JOptionPane.showConfirmDialog(rootPane,"Eeiiiiiits, udah bener belum data yang mau dihapus..??","Konfirmasi",JOptionPane.YES_NO_OPTION);
+                    if (reply == JOptionPane.YES_OPTION) {  
+                        for(i=0;i<tbPemeriksaan.getRowCount();i++){
                         if(tbPemeriksaan.getValueAt(i,0).toString().equals("true")){
                             Sequel.queryu("delete from pemeriksaan_ralan where no_rawat='"+tbPemeriksaan.getValueAt(i,1).toString()+
                                     "' and tgl_perawatan='"+tbPemeriksaan.getValueAt(i,4).toString()+
                                     "' and jam_rawat='"+tbPemeriksaan.getValueAt(i,5).toString()+"' ");
+                            }
                         }
+                        tampilPemeriksaan();
                     }
-                    tampilPemeriksaan();
                 }   break;
             case 4:
                 if(tabModeObstetri.getRowCount()==0){
