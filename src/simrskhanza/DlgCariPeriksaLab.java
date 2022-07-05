@@ -3162,10 +3162,11 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                         param.put("umur",rs.getString("umur"));
                         perujuk_luar = Sequel.cariIsi("select rujuk_masuk.perujuk from reg_periksa inner join rujuk_masuk on rujuk_masuk.no_rawat = reg_periksa.no_rawat where reg_periksa.status_lanjut <> 'Ranap' and reg_periksa.no_rawat =?",rs.getString("no_rawat"));
                         if(!perujuk_luar.equals("")){
-                            param.put("pengirim", perujuk_luar);
+                            param.put("perujuk", perujuk_luar);
                         }else{
-                            param.put("pengirim",Sequel.cariIsi("select nm_dokter from dokter where kd_dokter=?",rs.getString("dokter_perujuk")));
+                            param.put("perujuk","-");
                         }
+                        param.put("pengirim",Sequel.cariIsi("select nm_dokter from dokter where kd_dokter=?",rs.getString("dokter_perujuk")));
                         param.put("tanggal",rs.getString("tgl_periksa"));
                         param.put("penjab",rs.getString("nm_dokter"));
                         param.put("petugas",rs.getString("nama"));

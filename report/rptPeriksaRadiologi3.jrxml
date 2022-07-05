@@ -26,6 +26,7 @@
 	<parameter name="logo" class="java.io.InputStream"/>
 	<parameter name="pemeriksaan" class="java.lang.String"/>
 	<parameter name="hasil" class="java.lang.String"/>
+	<parameter name="perujuk" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[select current_date as tanggal, pasien.no_ktp, pasien.tgl_lahir from hasil_radiologi inner join reg_periksa inner join pasien on hasil_radiologi.no_rawat = reg_periksa.no_rawat and reg_periksa.no_rkm_medis = pasien.no_rkm_medis where hasil_radiologi.no_rawat = $P{noperiksa} limit 1]]>
 	</queryString>
@@ -160,7 +161,7 @@
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="385" y="144" width="136" height="15" uuid="55f8fe1b-3c0a-4ca4-aae2-1bd34aad7616"/>
+				<reportElement x="385" y="160" width="136" height="15" uuid="55f8fe1b-3c0a-4ca4-aae2-1bd34aad7616"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10"/>
 					<paragraph lineSpacing="Single"/>
@@ -168,7 +169,7 @@
 				<textFieldExpression><![CDATA[$P{pengirim}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Transparent" x="286" y="144" width="89" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="cdc1b0fc-81a9-4a44-8e47-671764ea81f6"/>
+				<reportElement mode="Transparent" x="286" y="160" width="89" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="cdc1b0fc-81a9-4a44-8e47-671764ea81f6"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10" isBold="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -176,7 +177,7 @@
 				<text><![CDATA[Dokter Pengirim]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="375" y="144" width="10" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="3b113773-6754-4c7d-9d52-8637de7998c6"/>
+				<reportElement mode="Transparent" x="375" y="160" width="10" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="3b113773-6754-4c7d-9d52-8637de7998c6"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10" isBold="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -184,7 +185,7 @@
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="375" y="159" width="10" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="aeb8c65d-c99e-42e7-b06e-520f5a319100"/>
+				<reportElement mode="Transparent" x="375" y="175" width="10" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="aeb8c65d-c99e-42e7-b06e-520f5a319100"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10" isBold="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -192,7 +193,7 @@
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="286" y="159" width="89" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="bb00b944-bbee-4511-8421-a618b1d3631e"/>
+				<reportElement mode="Transparent" x="286" y="175" width="89" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="bb00b944-bbee-4511-8421-a618b1d3631e"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10" isBold="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -200,7 +201,7 @@
 				<text><![CDATA[Tgl.Pemeriksaan]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="385" y="159" width="136" height="15" uuid="f779eef6-e029-43bb-8b99-45056fa00e02"/>
+				<reportElement x="385" y="175" width="136" height="15" uuid="f779eef6-e029-43bb-8b99-45056fa00e02"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10"/>
 					<paragraph lineSpacing="Single"/>
@@ -208,7 +209,7 @@
 				<textFieldExpression><![CDATA[$P{tanggal}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Transparent" x="375" y="174" width="10" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="d038c7ce-2e65-4959-8733-4fd6b82cd5f4"/>
+				<reportElement mode="Transparent" x="375" y="190" width="10" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="d038c7ce-2e65-4959-8733-4fd6b82cd5f4"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10" isBold="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -216,7 +217,7 @@
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="385" y="174" width="136" height="15" uuid="3fae778f-4dd1-4eb8-9666-a80ad449b5f1"/>
+				<reportElement x="385" y="190" width="136" height="15" uuid="3fae778f-4dd1-4eb8-9666-a80ad449b5f1"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10"/>
 					<paragraph lineSpacing="Single"/>
@@ -224,7 +225,7 @@
 				<textFieldExpression><![CDATA[$P{jam}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Transparent" x="286" y="174" width="89" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="851f6833-6d3d-4314-9cb5-e3f93945814a"/>
+				<reportElement mode="Transparent" x="286" y="190" width="89" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="851f6833-6d3d-4314-9cb5-e3f93945814a"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10" isBold="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -280,7 +281,7 @@
 				<text><![CDATA[No.Periksa]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="375" y="188" width="10" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="92ae50b9-a74c-4489-9f1d-c16fb0481587"/>
+				<reportElement mode="Transparent" x="375" y="204" width="10" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="92ae50b9-a74c-4489-9f1d-c16fb0481587"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10" isBold="false"/>
 					<paragraph lineSpacing="Single"/>
@@ -288,7 +289,7 @@
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="385" y="189" width="136" height="15" uuid="a30781b5-d7cc-421f-990f-d4d5bb9c3f29"/>
+				<reportElement x="385" y="205" width="136" height="15" uuid="a30781b5-d7cc-421f-990f-d4d5bb9c3f29"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10"/>
 					<paragraph lineSpacing="Single"/>
@@ -296,7 +297,7 @@
 				<textFieldExpression><![CDATA[$P{namakamar}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="286" y="189" width="89" height="15" uuid="a7908423-0492-4757-be51-9353acff80d6"/>
+				<reportElement x="286" y="205" width="89" height="15" uuid="a7908423-0492-4757-be51-9353acff80d6"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Tahoma" size="10"/>
 					<paragraph lineSpacing="Single"/>
@@ -393,6 +394,30 @@
 					<paragraph lineSpacing="Single"/>
 				</textElement>
 				<text><![CDATA[Tanggal Lahir]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="385" y="145" width="136" height="15" uuid="62044fa1-0234-494e-b459-1f0f69aefd0a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{perujuk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="286" y="145" width="89" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="c860717a-4566-46b4-ba7e-a7d43b437fec"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Perujuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="375" y="145" width="10" height="15" forecolor="#000000" backcolor="#F0F0DC" uuid="3719bbea-d158-4ae1-9abe-6c7517c91e21"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
 			</staticText>
 		</band>
 	</title>
