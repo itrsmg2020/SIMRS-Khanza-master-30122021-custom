@@ -1682,9 +1682,12 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
                         if(Status.equals("Sudah Terlayani")){
                             JOptionPane.showMessageDialog(rootPane,"Resep sudah tervalidasi ..!!");
                         }else {
-                            Sequel.meghapus("resep_obat","no_resep",NoResep);    
-                            TeksKosong();
-                            tampil();
+                            int reply = JOptionPane.showConfirmDialog(rootPane,"Eeiiiiiits, udah bener belum data yang mau dihapus..??","Konfirmasi",JOptionPane.YES_NO_OPTION);
+                            if (reply == JOptionPane.YES_OPTION) { 
+                                Sequel.meghapus("resep_obat","no_resep",NoResep);    
+                                TeksKosong();
+                                tampil();
+                            }
                         }                    
                     }
                 }

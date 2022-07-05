@@ -763,6 +763,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
         MnObatLangsung1 = new javax.swing.JMenuItem();
         MnDataPemberianObat1 = new javax.swing.JMenuItem();
         MnPenjualan1 = new javax.swing.JMenuItem();
+        MnTemplateResep1 = new javax.swing.JMenuItem();
         MnBilling1 = new javax.swing.JMenuItem();
         jSeparator14 = new javax.swing.JPopupMenu.Separator();
         MenuInputData1 = new javax.swing.JMenu();
@@ -4326,6 +4327,22 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
             }
         });
         MnObat1.add(MnPenjualan1);
+
+        MnTemplateResep1.setBackground(new java.awt.Color(255, 255, 254));
+        MnTemplateResep1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+        MnTemplateResep1.setForeground(new java.awt.Color(50, 50, 50));
+        MnTemplateResep1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
+        MnTemplateResep1.setText("Template Resep");
+        MnTemplateResep1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        MnTemplateResep1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        MnTemplateResep1.setName("MnTemplateResep1"); // NOI18N
+        MnTemplateResep1.setPreferredSize(new java.awt.Dimension(200, 26));
+        MnTemplateResep1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MnTemplateResep1ActionPerformed(evt);
+            }
+        });
+        MnObat1.add(MnTemplateResep1);
 
         jPopupMenu2.add(MnObat1);
 
@@ -9574,6 +9591,10 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
         // TODO add your handling code here:
     }//GEN-LAST:event_Scroll1MouseClicked
 
+    private void MnTemplateResep1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnTemplateResep1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MnTemplateResep1ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -9787,6 +9808,7 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
     private javax.swing.JMenuItem MnSuratKewaspadaanKesehatan;
     private javax.swing.JMenuItem MnSuratKontrol;
     private javax.swing.JMenuItem MnTemplateResep;
+    private javax.swing.JMenuItem MnTemplateResep1;
     private javax.swing.JMenuItem MnTeridentifikasiTB;
     private javax.swing.JMenu MnTindakan;
     private javax.swing.JMenu MnTindakan1;
