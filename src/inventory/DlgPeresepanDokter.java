@@ -670,6 +670,7 @@ public final class DlgPeresepanDokter extends javax.swing.JDialog {
         FormInput.setPreferredSize(new java.awt.Dimension(440, 107));
         FormInput.setLayout(null);
 
+        TPenjab.setEditable(false);
         TPenjab.setHighlighter(null);
         TPenjab.setName("TPenjab"); // NOI18N
         TPenjab.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -760,7 +761,7 @@ public final class DlgPeresepanDokter extends javax.swing.JDialog {
         jLabel8.setBounds(0, 42, 72, 23);
 
         DTPBeri.setForeground(new java.awt.Color(50, 70, 50));
-        DTPBeri.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "17-06-2022" }));
+        DTPBeri.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "30-06-2022" }));
         DTPBeri.setDisplayFormat("dd-MM-yyyy");
         DTPBeri.setName("DTPBeri"); // NOI18N
         DTPBeri.setOpaque(false);

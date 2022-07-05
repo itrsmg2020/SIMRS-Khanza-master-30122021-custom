@@ -23,7 +23,7 @@ public class DlgTemplateResepRSMG extends javax.swing.JDialog {
     private Connection koneksi=koneksiDB.condb();
     private PreparedStatement ps,ps2,ps3;
     private ResultSet rs,rs2,rs3;
-    private String aktifkanparsial="no",norm="",kddokter="",kode_pj="",norawat="",status="",templateresep="";
+    private String aktifkanparsial="no",norm="",kddokter="",kode_pj="",norawat="",status="",templateresep="dokter",nmpasien="",nmdokter="";
     private final Properties prop = new Properties();
     private int jmlparsial=0;
     
@@ -458,24 +458,7 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
     public void tampil() {
         Valid.tabelKosong(tabMode);
         try{  
-            if(templateresep==""){
-                if(ChkTanggal.isSelected()==true){
-                    ps=koneksi.prepareStatement("select resep_template_rsmg.no_resep,resep_template_rsmg.nm_resep,resep_template_rsmg.tgl_peresepan,resep_template_rsmg.jam_peresepan,"+
-                        " resep_template_rsmg.no_rawat,pasien.no_rkm_medis,pasien.nm_pasien,resep_template_rsmg.kd_dokter,dokter.nm_dokter, "+
-                        " if(resep_template_rsmg.jam_peresepan=resep_template_rsmg.jam,'Belum Terlayani','Sudah Terlayani') as status,resep_template_rsmg.status as status_asal "+
-                        " from resep_template_rsmg inner join reg_periksa inner join pasien inner join dokter on resep_template_rsmg.no_rawat=reg_periksa.no_rawat  "+
-                        " and reg_periksa.no_rkm_medis=pasien.no_rkm_medis and resep_template_rsmg.kd_dokter=dokter.kd_dokter where "+
-                        " resep_template_rsmg.tgl_perawatan between ? and ? order by resep_template_rsmg.tgl_perawatan desc,resep_template_rsmg.jam desc");
-                }else{
-                    ps=koneksi.prepareStatement("select resep_template_rsmg.no_resep,resep_template_rsmg.nm_resep,resep_template_rsmg.tgl_peresepan,resep_template_rsmg.jam_peresepan,"+
-                        " resep_template_rsmg.no_rawat,pasien.no_rkm_medis,pasien.nm_pasien,resep_template_rsmg.kd_dokter,dokter.nm_dokter, "+
-                        " if(resep_template_rsmg.jam_peresepan=resep_template_rsmg.jam,'Belum Terlayani','Sudah Terlayani') as status,resep_template_rsmg.status as status_asal "+
-                        " from resep_template_rsmg inner join reg_periksa inner join pasien inner join dokter on resep_template_rsmg.no_rawat=reg_periksa.no_rawat  "+
-                        " and reg_periksa.no_rkm_medis=pasien.no_rkm_medis and resep_template_rsmg.kd_dokter=dokter.kd_dokter "+
-                        " order by resep_template_rsmg.tgl_perawatan desc,resep_template_rsmg.jam desc");
-                }
-                
-            }else if(templateresep=="dokter"){
+            if(templateresep.equals("dokter")){
                 
                 if(ChkTanggal.isSelected()==true){
                     ps=koneksi.prepareStatement("select resep_template_rsmg.no_resep,resep_template_rsmg.nm_resep,resep_template_rsmg.tgl_peresepan,resep_template_rsmg.jam_peresepan,"+
@@ -492,16 +475,28 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
                         " and reg_periksa.no_rkm_medis=pasien.no_rkm_medis and resep_template_rsmg.kd_dokter=dokter.kd_dokter where "+
                         " resep_template_rsmg.kd_dokter=? order by resep_template_rsmg.tgl_perawatan desc,resep_template_rsmg.jam desc");
                 }                       
+            }else if(templateresep.equals("")){
+                if(ChkTanggal.isSelected()==true){
+                    ps=koneksi.prepareStatement("select resep_template_rsmg.no_resep,resep_template_rsmg.nm_resep,resep_template_rsmg.tgl_peresepan,resep_template_rsmg.jam_peresepan,"+
+                        " resep_template_rsmg.no_rawat,pasien.no_rkm_medis,pasien.nm_pasien,resep_template_rsmg.kd_dokter,dokter.nm_dokter, "+
+                        " if(resep_template_rsmg.jam_peresepan=resep_template_rsmg.jam,'Belum Terlayani','Sudah Terlayani') as status,resep_template_rsmg.status as status_asal "+
+                        " from resep_template_rsmg inner join reg_periksa inner join pasien inner join dokter on resep_template_rsmg.no_rawat=reg_periksa.no_rawat  "+
+                        " and reg_periksa.no_rkm_medis=pasien.no_rkm_medis and resep_template_rsmg.kd_dokter=dokter.kd_dokter where "+
+                        " resep_template_rsmg.tgl_perawatan between ? and ? order by resep_template_rsmg.tgl_perawatan desc,resep_template_rsmg.jam desc");
+                }else{
+                    ps=koneksi.prepareStatement("select resep_template_rsmg.no_resep,resep_template_rsmg.nm_resep,resep_template_rsmg.tgl_peresepan,resep_template_rsmg.jam_peresepan,"+
+                        " resep_template_rsmg.no_rawat,pasien.no_rkm_medis,pasien.nm_pasien,resep_template_rsmg.kd_dokter,dokter.nm_dokter, "+
+                        " if(resep_template_rsmg.jam_peresepan=resep_template_rsmg.jam,'Belum Terlayani','Sudah Terlayani') as status,resep_template_rsmg.status as status_asal "+
+                        " from resep_template_rsmg inner join reg_periksa inner join pasien inner join dokter on resep_template_rsmg.no_rawat=reg_periksa.no_rawat  "+
+                        " and reg_periksa.no_rkm_medis=pasien.no_rkm_medis and resep_template_rsmg.kd_dokter=dokter.kd_dokter "+
+                        " order by resep_template_rsmg.tgl_perawatan desc,resep_template_rsmg.jam desc");
+                }
+                
             }
             
             try{
                 
-                if(templateresep == ""){
-                    if(ChkTanggal.isSelected()==true){
-                        ps.setString(1,Valid.SetTgl(DTPCari1.getSelectedItem()+""));
-                        ps.setString(2,Valid.SetTgl(DTPCari2.getSelectedItem()+""));
-                    }
-                }else if(templateresep == "dokter"){
+               if(templateresep.equals("dokter")){
                         if(ChkTanggal.isSelected()==true){
                             ps.setString(1,Valid.SetTgl(DTPCari1.getSelectedItem()+""));
                             ps.setString(2,Valid.SetTgl(DTPCari2.getSelectedItem()+""));
@@ -509,6 +504,11 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
                         }else{
                             ps.setString(1,kddokter);
                         } 
+                }else if(templateresep.equals("")){
+                    if(ChkTanggal.isSelected()==true){
+                        ps.setString(1,Valid.SetTgl(DTPCari1.getSelectedItem()+""));
+                    }
+                       
                 }
                 
                 rs=ps.executeQuery();
@@ -606,22 +606,26 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
         BtnTambah.setEnabled(akses.getresep_dokter());
     }
     
-    public void setRM(String norawat,String norm,String kodedokter,String kodepj,String status){
+    public void setRM(String norawat,String norm,String kodedokter,String kodepj,String status,String nmpasien){
         this.norm=norm;
         this.status=status;
         this.norawat=norawat;
         this.kddokter=kodedokter;
         this.kode_pj=kodepj;
+        this.nmpasien=nmpasien;
     }
 
     private void panggilform() {
+        
+        nmdokter=Sequel.cariIsi("select nm_dokter from dokter where kd_dokter =?",kddokter);
         DlgPeresepanDokter resep=new DlgPeresepanDokter(null,false);
         resep.setSize(internalFrame1.getWidth(),internalFrame1.getHeight());
         resep.setLocationRelativeTo(internalFrame1);
         resep.setNoRm(norawat,tbPemisahan.getValueAt(tbPemisahan.getSelectedRow(),7).toString(),
-                tbPemisahan.getValueAt(tbPemisahan.getSelectedRow(),6).toString(), 
-                tbPemisahan.getValueAt(tbPemisahan.getSelectedRow(),4).toString()+" "+
-                tbPemisahan.getValueAt(tbPemisahan.getSelectedRow(),5).toString(), 
+                nmdokter,
+//                tbPemisahan.getValueAt(tbPemisahan.getSelectedRow(),6).toString(),
+                norm+" "+nmpasien,
+//                tbPemisahan.getValueAt(tbPemisahan.getSelectedRow(),5).toString(),
                 kode_pj,status);
         resep.isCek();
         resep.tampilobat2(tbPemisahan.getValueAt(tbPemisahan.getSelectedRow(),0).toString());

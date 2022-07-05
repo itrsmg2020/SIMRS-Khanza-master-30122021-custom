@@ -720,7 +720,7 @@ public class koneksiDB {
     public static String TEMPLATERESEP(){
         try{
             prop.loadFromXML(new FileInputStream("setting/database.xml"));
-            var=prop.getProperty("RESEPFARMASI");
+            var=prop.getProperty("TEMPLATERESEP");
         }catch(Exception e){
             var=""; 
         }
