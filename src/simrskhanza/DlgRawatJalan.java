@@ -5695,7 +5695,7 @@ private void BtnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
                                     TPemeriksaan.setText("");TAlergi.setText("");cmbImun.setSelectedIndex(0);
                                     TindakLanjut.setText("");TPenilaian.setText("");TInstruksi.setText("");
                                     tampilPemeriksaan();
-                            }                            
+                            }
                         }else{
                             JOptionPane.showMessageDialog(rootPane,"Silahkan pilih data yang mau diganti..!!");
                             TCari.requestFocus();

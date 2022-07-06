@@ -928,6 +928,14 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         Masalah = new widget.TextArea();
         jLabel170 = new widget.Label();
         jLabel171 = new widget.Label();
+        R1 = new widget.RadioButton();
+        R2 = new widget.RadioButton();
+        R3 = new widget.RadioButton();
+        R4 = new widget.RadioButton();
+        R5 = new widget.RadioButton();
+        R6 = new widget.RadioButton();
+        R7 = new widget.RadioButton();
+        R8 = new widget.RadioButton();
         internalFrame3 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbObat = new widget.Table();
@@ -972,7 +980,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         panelBiasa2.setLayout(null);
 
         TanggalPersalinan.setForeground(new java.awt.Color(50, 70, 50));
-        TanggalPersalinan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "04-07-2022" }));
+        TanggalPersalinan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "06-07-2022" }));
         TanggalPersalinan.setDisplayFormat("dd-MM-yyyy");
         TanggalPersalinan.setName("TanggalPersalinan"); // NOI18N
         TanggalPersalinan.setOpaque(false);
@@ -1562,13 +1570,13 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         Informasi.setBounds(726, 40, 128, 23);
 
         jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel53.setText("I. RIWAYAT KB DAN MENSTRUASI");
+        jLabel53.setText("I. RIWAYAT KEHAMILAN, PERSALINAN DAN NIFAS");
         jLabel53.setName("jLabel53"); // NOI18N
         FormInput.add(jLabel53);
-        jLabel53.setBounds(10, 80, 180, 23);
+        jLabel53.setBounds(10, 80, 280, 23);
 
         TglAsuhan.setForeground(new java.awt.Color(50, 70, 50));
-        TglAsuhan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "04-07-2022 11:45:32" }));
+        TglAsuhan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "06-07-2022 08:02:44" }));
         TglAsuhan.setDisplayFormat("dd-MM-yyyy HH:mm:ss");
         TglAsuhan.setName("TglAsuhan"); // NOI18N
         TglAsuhan.setOpaque(false);
@@ -2377,7 +2385,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel92.setBounds(0, 920, 170, 23);
 
         HPHT.setForeground(new java.awt.Color(50, 70, 50));
-        HPHT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "04-07-2022" }));
+        HPHT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "06-07-2022" }));
         HPHT.setDisplayFormat("dd-MM-yyyy");
         HPHT.setName("HPHT"); // NOI18N
         HPHT.setOpaque(false);
@@ -2416,7 +2424,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel96.setBounds(510, 920, 40, 23);
 
         TP.setForeground(new java.awt.Color(50, 70, 50));
-        TP.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "04-07-2022" }));
+        TP.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "06-07-2022" }));
         TP.setDisplayFormat("dd-MM-yyyy");
         TP.setName("TP"); // NOI18N
         TP.setOpaque(false);
@@ -3543,6 +3551,134 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jLabel171);
         jLabel171.setBounds(10, 380, 180, 23);
 
+        R1.setBackground(new java.awt.Color(240, 250, 230));
+        R1.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
+        R1.setSelected(true);
+        R1.setText("Implan");
+        R1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        R1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        R1.setName("R1"); // NOI18N
+        R1.setPreferredSize(new java.awt.Dimension(120, 23));
+        R1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R1ActionPerformed(evt);
+            }
+        });
+        FormInput.add(R1);
+        R1.setBounds(740, 260, 70, 23);
+
+        R2.setBackground(new java.awt.Color(240, 250, 230));
+        R2.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
+        R2.setSelected(true);
+        R2.setText("Suntik");
+        R2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        R2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        R2.setName("R2"); // NOI18N
+        R2.setPreferredSize(new java.awt.Dimension(120, 23));
+        R2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R2ActionPerformed(evt);
+            }
+        });
+        FormInput.add(R2);
+        R2.setBounds(180, 260, 70, 23);
+
+        R3.setBackground(new java.awt.Color(240, 250, 230));
+        R3.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
+        R3.setSelected(true);
+        R3.setText("IUD");
+        R3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        R3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        R3.setName("R3"); // NOI18N
+        R3.setPreferredSize(new java.awt.Dimension(120, 23));
+        R3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R3ActionPerformed(evt);
+            }
+        });
+        FormInput.add(R3);
+        R3.setBounds(260, 260, 70, 23);
+
+        R4.setBackground(new java.awt.Color(240, 250, 230));
+        R4.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
+        R4.setSelected(true);
+        R4.setText("Pil");
+        R4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        R4.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        R4.setName("R4"); // NOI18N
+        R4.setPreferredSize(new java.awt.Dimension(120, 23));
+        R4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R4ActionPerformed(evt);
+            }
+        });
+        FormInput.add(R4);
+        R4.setBounds(340, 260, 70, 23);
+
+        R5.setBackground(new java.awt.Color(240, 250, 230));
+        R5.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
+        R5.setSelected(true);
+        R5.setText("Kondom");
+        R5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        R5.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        R5.setName("R5"); // NOI18N
+        R5.setPreferredSize(new java.awt.Dimension(120, 23));
+        R5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R5ActionPerformed(evt);
+            }
+        });
+        FormInput.add(R5);
+        R5.setBounds(420, 260, 70, 23);
+
+        R6.setBackground(new java.awt.Color(240, 250, 230));
+        R6.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
+        R6.setSelected(true);
+        R6.setText("Kalender");
+        R6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        R6.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        R6.setName("R6"); // NOI18N
+        R6.setPreferredSize(new java.awt.Dimension(120, 23));
+        R6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R6ActionPerformed(evt);
+            }
+        });
+        FormInput.add(R6);
+        R6.setBounds(500, 260, 70, 23);
+
+        R7.setBackground(new java.awt.Color(240, 250, 230));
+        R7.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
+        R7.setSelected(true);
+        R7.setText("MOW");
+        R7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        R7.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        R7.setName("R7"); // NOI18N
+        R7.setPreferredSize(new java.awt.Dimension(120, 23));
+        R7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R7ActionPerformed(evt);
+            }
+        });
+        FormInput.add(R7);
+        R7.setBounds(580, 260, 70, 23);
+
+        R8.setBackground(new java.awt.Color(240, 250, 230));
+        R8.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
+        R8.setSelected(true);
+        R8.setText("MOP");
+        R8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        R8.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        R8.setName("R8"); // NOI18N
+        R8.setPreferredSize(new java.awt.Dimension(120, 23));
+        R8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R8ActionPerformed(evt);
+            }
+        });
+        FormInput.add(R8);
+        R8.setBounds(660, 260, 70, 23);
+
         scrollInput.setViewportView(FormInput);
 
         internalFrame2.add(scrollInput, java.awt.BorderLayout.CENTER);
@@ -3584,7 +3720,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         panelGlass9.add(jLabel19);
 
         DTPCari1.setForeground(new java.awt.Color(50, 70, 50));
-        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "04-07-2022" }));
+        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "06-07-2022" }));
         DTPCari1.setDisplayFormat("dd-MM-yyyy");
         DTPCari1.setName("DTPCari1"); // NOI18N
         DTPCari1.setOpaque(false);
@@ -3598,7 +3734,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         panelGlass9.add(jLabel21);
 
         DTPCari2.setForeground(new java.awt.Color(50, 70, 50));
-        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "04-07-2022" }));
+        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "06-07-2022" }));
         DTPCari2.setDisplayFormat("dd-MM-yyyy");
         DTPCari2.setName("DTPCari2"); // NOI18N
         DTPCari2.setOpaque(false);
@@ -5203,6 +5339,38 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         Valid.pindah2(evt,KetDokter,Tindakan);
     }//GEN-LAST:event_MasalahKeyPressed
 
+    private void R1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_R1ActionPerformed
+
+    private void R2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_R2ActionPerformed
+
+    private void R3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_R3ActionPerformed
+
+    private void R4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_R4ActionPerformed
+
+    private void R5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_R5ActionPerformed
+
+    private void R6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_R6ActionPerformed
+
+    private void R7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_R7ActionPerformed
+
+    private void R8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_R8ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -5342,6 +5510,14 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox Prothesa;
     private widget.ComboBox Provokes;
     private widget.ComboBox Quality;
+    private widget.RadioButton R1;
+    private widget.RadioButton R2;
+    private widget.RadioButton R3;
+    private widget.RadioButton R4;
+    private widget.RadioButton R5;
+    private widget.RadioButton R6;
+    private widget.RadioButton R7;
+    private widget.RadioButton R8;
     private widget.ComboBox RJa1;
     private widget.ComboBox RJa2;
     private widget.ComboBox RJb;
