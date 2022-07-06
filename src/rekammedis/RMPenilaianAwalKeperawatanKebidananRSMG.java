@@ -515,7 +515,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             @Override
             public void windowClosed(WindowEvent e) {
                 if(petugas.getTable().getSelectedRow()!= -1){ 
-                    KdPetugas.setText(petugas.getTable().getValueAt(petugas.getTable().getSelectedRow(),0).toString());
+                    Keluhan.setText(petugas.getTable().getValueAt(petugas.getTable().getSelectedRow(),0).toString());
                     NmPetugas.setText(petugas.getTable().getValueAt(petugas.getTable().getSelectedRow(),1).toString());   
                 }              
             }
@@ -616,6 +616,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         Penyulit = new widget.TextBox();
         jLabel112 = new widget.Label();
         Keadaan = new widget.TextBox();
+        buttonGroup1 = new javax.swing.ButtonGroup();
         internalFrame1 = new widget.InternalFrame();
         panelGlass8 = new widget.panelisi();
         BtnSimpan = new widget.Button();
@@ -633,12 +634,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         TPasien = new widget.TextBox();
         TNoRM = new widget.TextBox();
         label14 = new widget.Label();
-        KdPetugas = new widget.TextBox();
+        Keluhan = new widget.TextBox();
         NmPetugas = new widget.TextBox();
         BtnDokter = new widget.Button();
         jLabel8 = new widget.Label();
-        TglLahir = new widget.TextBox();
         Jk = new widget.TextBox();
+        TglLahir = new widget.TextBox();
         jLabel10 = new widget.Label();
         label11 = new widget.Label();
         jLabel11 = new widget.Label();
@@ -936,6 +937,10 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         R6 = new widget.RadioButton();
         R7 = new widget.RadioButton();
         R8 = new widget.RadioButton();
+        KdPetugas = new widget.TextBox();
+        jLabel172 = new widget.Label();
+        R9 = new widget.RadioButton();
+        jLabel173 = new widget.Label();
         internalFrame3 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbObat = new widget.Table();
@@ -1339,16 +1344,16 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(label14);
         label14.setBounds(0, 40, 70, 23);
 
-        KdPetugas.setEditable(false);
-        KdPetugas.setName("KdPetugas"); // NOI18N
-        KdPetugas.setPreferredSize(new java.awt.Dimension(80, 23));
-        KdPetugas.addKeyListener(new java.awt.event.KeyAdapter() {
+        Keluhan.setEditable(false);
+        Keluhan.setName("Keluhan"); // NOI18N
+        Keluhan.setPreferredSize(new java.awt.Dimension(80, 23));
+        Keluhan.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                KdPetugasKeyPressed(evt);
+                KeluhanKeyPressed(evt);
             }
         });
-        FormInput.add(KdPetugas);
-        KdPetugas.setBounds(74, 40, 100, 23);
+        FormInput.add(Keluhan);
+        Keluhan.setBounds(220, 280, 230, 23);
 
         NmPetugas.setEditable(false);
         NmPetugas.setName("NmPetugas"); // NOI18N
@@ -1379,17 +1384,17 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jLabel8);
         jLabel8.setBounds(580, 10, 60, 23);
 
-        TglLahir.setEditable(false);
-        TglLahir.setHighlighter(null);
-        TglLahir.setName("TglLahir"); // NOI18N
-        FormInput.add(TglLahir);
-        TglLahir.setBounds(644, 10, 80, 23);
-
         Jk.setEditable(false);
         Jk.setHighlighter(null);
         Jk.setName("Jk"); // NOI18N
         FormInput.add(Jk);
         Jk.setBounds(774, 10, 80, 23);
+
+        TglLahir.setEditable(false);
+        TglLahir.setHighlighter(null);
+        TglLahir.setName("TglLahir"); // NOI18N
+        FormInput.add(TglLahir);
+        TglLahir.setBounds(644, 10, 80, 23);
 
         jLabel10.setText("No.Rawat :");
         jLabel10.setName("jLabel10"); // NOI18N
@@ -1479,10 +1484,10 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(Suhu);
         Suhu.setBounds(610, 400, 60, 23);
 
-        jLabel22.setText("TD :");
+        jLabel22.setText("Keluhan :");
         jLabel22.setName("jLabel22"); // NOI18N
         FormInput.add(jLabel22);
-        jLabel22.setBounds(0, 400, 70, 23);
+        jLabel22.setBounds(120, 280, 90, 23);
 
         TD.setFocusTraversalPolicyProvider(true);
         TD.setName("TD"); // NOI18N
@@ -3553,7 +3558,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
 
         R1.setBackground(new java.awt.Color(240, 250, 230));
         R1.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
-        R1.setSelected(true);
+        buttonGroup1.add(R1);
         R1.setText("Implan");
         R1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         R1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3565,12 +3570,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(R1);
-        R1.setBounds(740, 260, 70, 23);
+        R1.setBounds(800, 250, 70, 23);
 
         R2.setBackground(new java.awt.Color(240, 250, 230));
         R2.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
-        R2.setSelected(true);
-        R2.setText("Suntik");
+        buttonGroup1.add(R2);
+        R2.setText("Tidak Ada");
         R2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         R2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         R2.setName("R2"); // NOI18N
@@ -3581,11 +3586,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(R2);
-        R2.setBounds(180, 260, 70, 23);
+        R2.setBounds(160, 250, 70, 23);
 
         R3.setBackground(new java.awt.Color(240, 250, 230));
         R3.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
-        R3.setSelected(true);
+        buttonGroup1.add(R3);
         R3.setText("IUD");
         R3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         R3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3597,11 +3602,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(R3);
-        R3.setBounds(260, 260, 70, 23);
+        R3.setBounds(320, 250, 70, 23);
 
         R4.setBackground(new java.awt.Color(240, 250, 230));
         R4.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
-        R4.setSelected(true);
+        buttonGroup1.add(R4);
         R4.setText("Pil");
         R4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         R4.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3613,11 +3618,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(R4);
-        R4.setBounds(340, 260, 70, 23);
+        R4.setBounds(400, 250, 70, 23);
 
         R5.setBackground(new java.awt.Color(240, 250, 230));
         R5.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
-        R5.setSelected(true);
+        buttonGroup1.add(R5);
         R5.setText("Kondom");
         R5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         R5.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3629,11 +3634,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(R5);
-        R5.setBounds(420, 260, 70, 23);
+        R5.setBounds(480, 250, 70, 23);
 
         R6.setBackground(new java.awt.Color(240, 250, 230));
         R6.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
-        R6.setSelected(true);
+        buttonGroup1.add(R6);
         R6.setText("Kalender");
         R6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         R6.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3645,11 +3650,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(R6);
-        R6.setBounds(500, 260, 70, 23);
+        R6.setBounds(560, 250, 70, 23);
 
         R7.setBackground(new java.awt.Color(240, 250, 230));
         R7.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
-        R7.setSelected(true);
+        buttonGroup1.add(R7);
         R7.setText("MOW");
         R7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         R7.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3661,11 +3666,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(R7);
-        R7.setBounds(580, 260, 70, 23);
+        R7.setBounds(640, 250, 70, 23);
 
         R8.setBackground(new java.awt.Color(240, 250, 230));
         R8.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
-        R8.setSelected(true);
+        buttonGroup1.add(R8);
         R8.setText("MOP");
         R8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         R8.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -3677,7 +3682,45 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(R8);
-        R8.setBounds(660, 260, 70, 23);
+        R8.setBounds(720, 250, 70, 23);
+
+        KdPetugas.setEditable(false);
+        KdPetugas.setName("KdPetugas"); // NOI18N
+        KdPetugas.setPreferredSize(new java.awt.Dimension(80, 23));
+        KdPetugas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                KdPetugasKeyPressed(evt);
+            }
+        });
+        FormInput.add(KdPetugas);
+        KdPetugas.setBounds(74, 40, 100, 23);
+
+        jLabel172.setText("TD :");
+        jLabel172.setName("jLabel172"); // NOI18N
+        FormInput.add(jLabel172);
+        jLabel172.setBounds(0, 400, 70, 23);
+
+        R9.setBackground(new java.awt.Color(240, 250, 230));
+        R9.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.pink));
+        buttonGroup1.add(R9);
+        R9.setSelected(true);
+        R9.setText("Suntik");
+        R9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        R9.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        R9.setName("R9"); // NOI18N
+        R9.setPreferredSize(new java.awt.Dimension(120, 23));
+        R9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R9ActionPerformed(evt);
+            }
+        });
+        FormInput.add(R9);
+        R9.setBounds(240, 250, 70, 23);
+
+        jLabel173.setText("Riwayat KB :");
+        jLabel173.setName("jLabel173"); // NOI18N
+        FormInput.add(jLabel173);
+        jLabel173.setBounds(0, 250, 140, 23);
 
         scrollInput.setViewportView(FormInput);
 
@@ -3946,7 +3989,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
                     HubunganKeluarga.getSelectedItem().toString(),TinggalDengan.getSelectedItem().toString(),KetTinggal.getText(),Ekonomi.getSelectedItem().toString(),StatusBudaya.getSelectedItem().toString(),KetBudaya.getText(),Edukasi.getSelectedItem().toString(),KetEdukasi.getText(),RJa1.getSelectedItem().toString(),RJa2.getSelectedItem().toString(), 
                     RJb.getSelectedItem().toString(),Hasil.getSelectedItem().toString(),Lapor.getSelectedItem().toString(),KetLapor.getText(),SG1.getSelectedItem().toString(),Nilai1.getSelectedItem().toString(),SG2.getSelectedItem().toString(),Nilai2.getSelectedItem().toString(),TotalHasil.getText(),Nyeri.getSelectedItem().toString(),Provokes.getSelectedItem().toString(), 
                     KetProvokes.getText(),Quality.getSelectedItem().toString(),KetQuality.getText(),Lokasi.getText(),Menyebar.getSelectedItem().toString(),SkalaNyeri.getSelectedItem().toString(),Durasi.getText(),NyeriHilang.getSelectedItem().toString(),KetNyeri.getText(),PadaDokter.getSelectedItem().toString(),KetDokter.getText(),Masalah.getText(), 
-                    Tindakan.getText(),KdPetugas.getText()
+                    Tindakan.getText(),Keluhan.getText()
                 })==true){
                 emptTeks();
             }
@@ -3977,7 +4020,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             if(akses.getkode().equals("Admin Utama")){
                 hapus();
             }else{
-                if(KdPetugas.getText().equals(tbObat.getValueAt(tbObat.getSelectedRow(),124).toString())){
+                if(Keluhan.getText().equals(tbObat.getValueAt(tbObat.getSelectedRow(),124).toString())){
                     hapus();
                 }else{
                     JOptionPane.showMessageDialog(null,"Hanya bisa dihapus oleh petugas yang bersangkutan..!!");
@@ -4033,7 +4076,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
                 if(akses.getkode().equals("Admin Utama")){
                     ganti();
                 }else{
-                    if(KdPetugas.getText().equals(tbObat.getValueAt(tbObat.getSelectedRow(),124).toString())){
+                    if(Keluhan.getText().equals(tbObat.getValueAt(tbObat.getSelectedRow(),124).toString())){
                         ganti();
                     }else{
                         JOptionPane.showMessageDialog(null,"Hanya bisa diganti oleh petugas yang bersangkutan..!!");
@@ -4808,9 +4851,9 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         petugas.setVisible(true);
     }//GEN-LAST:event_BtnDokterActionPerformed
 
-    private void KdPetugasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KdPetugasKeyPressed
+    private void KeluhanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KeluhanKeyPressed
 
-    }//GEN-LAST:event_KdPetugasKeyPressed
+    }//GEN-LAST:event_KeluhanKeyPressed
 
     private void TNoRwKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TNoRwKeyPressed
         if(evt.getKeyCode()==KeyEvent.VK_PAGE_DOWN){
@@ -5371,6 +5414,14 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_R8ActionPerformed
 
+    private void KdPetugasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KdPetugasKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KdPetugasKeyPressed
+
+    private void R9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_R9ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -5451,6 +5502,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox KebiasaanObat;
     private widget.TextBox KebiasaanObatDiminum;
     private widget.TextBox Kekuatan;
+    private widget.TextBox Keluhan;
     private widget.TextArea KeluhanUtama;
     private widget.TextBox KetBantu;
     private widget.TextBox KetBudaya;
@@ -5518,6 +5570,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.RadioButton R6;
     private widget.RadioButton R7;
     private widget.RadioButton R8;
+    private widget.RadioButton R9;
     private widget.ComboBox RJa1;
     private widget.ComboBox RJa2;
     private widget.ComboBox RJb;
@@ -5565,6 +5618,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.TextBox UsiaKawin2;
     private widget.TextBox UsiaKawin3;
     private widget.TextBox UsiaKehamilan;
+    private javax.swing.ButtonGroup buttonGroup1;
     private widget.InternalFrame internalFrame1;
     private widget.InternalFrame internalFrame2;
     private widget.InternalFrame internalFrame3;
@@ -5649,6 +5703,8 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.Label jLabel17;
     private widget.Label jLabel170;
     private widget.Label jLabel171;
+    private widget.Label jLabel172;
+    private widget.Label jLabel173;
     private widget.Label jLabel18;
     private widget.Label jLabel19;
     private widget.Label jLabel20;
@@ -6094,7 +6150,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             KetDokter.setText(tbObat.getValueAt(tbObat.getSelectedRow(),121).toString());
             Masalah.setText(tbObat.getValueAt(tbObat.getSelectedRow(),122).toString());
             Tindakan.setText(tbObat.getValueAt(tbObat.getSelectedRow(),123).toString());
-            KdPetugas.setText(tbObat.getValueAt(tbObat.getSelectedRow(),124).toString());
+            Keluhan.setText(tbObat.getValueAt(tbObat.getSelectedRow(),124).toString());
             NmPetugas.setText(tbObat.getValueAt(tbObat.getSelectedRow(),125).toString());
             tampilPersalinan();
             Valid.SetTgl2(TglAsuhan,tbObat.getValueAt(tbObat.getSelectedRow(),8).toString());
@@ -6155,12 +6211,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         BtnEdit.setEnabled(akses.getpenilaian_awal_keperawatan_kebidanan());
         BtnEdit.setEnabled(akses.getpenilaian_awal_keperawatan_kebidanan()); 
         if(akses.getjml2()>=1){
-            KdPetugas.setEditable(false);
+            Keluhan.setEditable(false);
             BtnDokter.setEnabled(false);
-            KdPetugas.setText(akses.getkode());
-            Sequel.cariIsi("select nama from petugas where nip=?", NmPetugas,KdPetugas.getText());
+            Keluhan.setText(akses.getkode());
+            Sequel.cariIsi("select nama from petugas where nip=?", NmPetugas,Keluhan.getText());
             if(NmPetugas.getText().equals("")){
-                KdPetugas.setText("");
+                Keluhan.setText("");
                 JOptionPane.showMessageDialog(null,"User login bukan petugas...!!");
             }
         }            
@@ -6304,7 +6360,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
                 HubunganKeluarga.getSelectedItem().toString(),TinggalDengan.getSelectedItem().toString(),KetTinggal.getText(),Ekonomi.getSelectedItem().toString(),StatusBudaya.getSelectedItem().toString(),KetBudaya.getText(),Edukasi.getSelectedItem().toString(),KetEdukasi.getText(),RJa1.getSelectedItem().toString(),RJa2.getSelectedItem().toString(), 
                 RJb.getSelectedItem().toString(),Hasil.getSelectedItem().toString(),Lapor.getSelectedItem().toString(),KetLapor.getText(),SG1.getSelectedItem().toString(),Nilai1.getSelectedItem().toString(),SG2.getSelectedItem().toString(),Nilai2.getSelectedItem().toString(),TotalHasil.getText(),Nyeri.getSelectedItem().toString(),Provokes.getSelectedItem().toString(), 
                 KetProvokes.getText(),Quality.getSelectedItem().toString(),KetQuality.getText(),Lokasi.getText(),Menyebar.getSelectedItem().toString(),SkalaNyeri.getSelectedItem().toString(),Durasi.getText(),NyeriHilang.getSelectedItem().toString(),KetNyeri.getText(),PadaDokter.getSelectedItem().toString(),KetDokter.getText(),Masalah.getText(), 
-                Tindakan.getText(),KdPetugas.getText(),tbObat.getValueAt(tbObat.getSelectedRow(),0).toString()
+                Tindakan.getText(),Keluhan.getText(),tbObat.getValueAt(tbObat.getSelectedRow(),0).toString()
              })==true){
                 getMasalah();
                 tampil();
