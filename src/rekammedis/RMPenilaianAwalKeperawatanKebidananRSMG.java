@@ -869,9 +869,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel180 = new widget.Label();
         jLabel181 = new widget.Label();
         jSeparator11 = new javax.swing.JSeparator();
-        RiwayatMenstruasi = new widget.ComboBox();
+        RiwayatPengobatan = new widget.ComboBox();
         HPL1 = new widget.TextBox();
         jSeparator12 = new javax.swing.JSeparator();
+        jLabel182 = new widget.Label();
+        RiwayatMenstruasi = new widget.ComboBox();
         internalFrame3 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbObat = new widget.Table();
@@ -2979,10 +2981,10 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(LamaMenstruasi);
         LamaMenstruasi.setBounds(340, 340, 70, 23);
 
-        jLabel176.setText("Riwayat Alergi Obat & Makanan :");
+        jLabel176.setText("Riwayat Pengobatan (Termasuk obat yang sedang dikonsumsi dalam 1 bulan terakhir) :");
         jLabel176.setName("jLabel176"); // NOI18N
         FormInput.add(jLabel176);
-        jLabel176.setBounds(0, 380, 200, 23);
+        jLabel176.setBounds(8, 410, 460, 23);
 
         HPM.setEditable(false);
         HPM.setName("HPM"); // NOI18N
@@ -3051,15 +3053,15 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jSeparator11);
         jSeparator11.setBounds(10, 800, 880, 1);
 
-        RiwayatMenstruasi.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
-        RiwayatMenstruasi.setName("RiwayatMenstruasi"); // NOI18N
-        RiwayatMenstruasi.addKeyListener(new java.awt.event.KeyAdapter() {
+        RiwayatPengobatan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
+        RiwayatPengobatan.setName("RiwayatPengobatan"); // NOI18N
+        RiwayatPengobatan.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                RiwayatMenstruasiKeyPressed(evt);
+                RiwayatPengobatanKeyPressed(evt);
             }
         });
-        FormInput.add(RiwayatMenstruasi);
-        RiwayatMenstruasi.setBounds(150, 310, 90, 23);
+        FormInput.add(RiwayatPengobatan);
+        RiwayatPengobatan.setBounds(480, 410, 90, 23);
 
         HPL1.setEditable(false);
         HPL1.setName("HPL1"); // NOI18N
@@ -3078,6 +3080,21 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jSeparator12.setName("jSeparator12"); // NOI18N
         FormInput.add(jSeparator12);
         jSeparator12.setBounds(10, 407, 880, 1);
+
+        jLabel182.setText("Riwayat Alergi Obat & Makanan :");
+        jLabel182.setName("jLabel182"); // NOI18N
+        FormInput.add(jLabel182);
+        jLabel182.setBounds(0, 380, 200, 23);
+
+        RiwayatMenstruasi.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
+        RiwayatMenstruasi.setName("RiwayatMenstruasi"); // NOI18N
+        RiwayatMenstruasi.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                RiwayatMenstruasiKeyPressed(evt);
+            }
+        });
+        FormInput.add(RiwayatMenstruasi);
+        RiwayatMenstruasi.setBounds(150, 310, 90, 23);
 
         scrollInput.setViewportView(FormInput);
 
@@ -4639,13 +4656,17 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_KetRiwayatObatMakananKeyPressed
 
-    private void RiwayatMenstruasiKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RiwayatMenstruasiKeyPressed
+    private void RiwayatPengobatanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RiwayatPengobatanKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_RiwayatMenstruasiKeyPressed
+    }//GEN-LAST:event_RiwayatPengobatanKeyPressed
 
     private void HPL1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_HPL1KeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_HPL1KeyPressed
+
+    private void RiwayatMenstruasiKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RiwayatMenstruasiKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RiwayatMenstruasiKeyPressed
 
     /**
     * @param args the command line arguments
@@ -4780,6 +4801,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox RiwayatKB;
     private widget.ComboBox RiwayatMenstruasi;
     private widget.ComboBox RiwayatObatMakanan;
+    private widget.ComboBox RiwayatPengobatan;
     private widget.ComboBox SG1;
     private widget.ComboBox SG2;
     private widget.ScrollPane Scroll;
@@ -4894,6 +4916,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.Label jLabel18;
     private widget.Label jLabel180;
     private widget.Label jLabel181;
+    private widget.Label jLabel182;
     private widget.Label jLabel19;
     private widget.Label jLabel20;
     private widget.Label jLabel21;
