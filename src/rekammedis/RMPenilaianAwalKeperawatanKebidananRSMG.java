@@ -677,7 +677,6 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel128 = new widget.Label();
         jLabel130 = new widget.Label();
         CacatFisik = new widget.TextBox();
-        jSeparator5 = new javax.swing.JSeparator();
         jLabel131 = new widget.Label();
         StatusPsiko = new widget.ComboBox();
         KetPsiko = new widget.TextBox();
@@ -705,7 +704,6 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel142 = new widget.Label();
         jLabel143 = new widget.Label();
         RJa1 = new widget.ComboBox();
-        jLabel145 = new widget.Label();
         RJb = new widget.ComboBox();
         Hasil = new widget.ComboBox();
         jLabel146 = new widget.Label();
@@ -836,6 +834,35 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         TFU14 = new widget.TextBox();
         AlatBantu1 = new widget.ComboBox();
         jSeparator14 = new javax.swing.JSeparator();
+        jLabel144 = new widget.Label();
+        jLabel147 = new widget.Label();
+        RJa2 = new widget.ComboBox();
+        CacatFisik1 = new widget.TextBox();
+        jLabel148 = new widget.Label();
+        jLabel184 = new widget.Label();
+        RJa3 = new widget.ComboBox();
+        CacatFisik2 = new widget.TextBox();
+        jLabel185 = new widget.Label();
+        CacatFisik3 = new widget.TextBox();
+        jLabel186 = new widget.Label();
+        jLabel187 = new widget.Label();
+        CacatFisik4 = new widget.TextBox();
+        jLabel188 = new widget.Label();
+        jLabel189 = new widget.Label();
+        jLabel190 = new widget.Label();
+        jLabel191 = new widget.Label();
+        jLabel192 = new widget.Label();
+        jLabel193 = new widget.Label();
+        jLabel194 = new widget.Label();
+        jLabel195 = new widget.Label();
+        jLabel196 = new widget.Label();
+        jLabel197 = new widget.Label();
+        jLabel198 = new widget.Label();
+        KebiasaanAlkohol1 = new widget.ComboBox();
+        KebiasaanAlkohol2 = new widget.ComboBox();
+        KebiasaanAlkohol3 = new widget.ComboBox();
+        KebiasaanAlkohol4 = new widget.ComboBox();
+        KebiasaanAlkohol5 = new widget.ComboBox();
         internalFrame3 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbObat = new widget.Table();
@@ -880,7 +907,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         panelBiasa2.setLayout(null);
 
         TanggalPersalinan.setForeground(new java.awt.Color(50, 70, 50));
-        TanggalPersalinan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "07-07-2022" }));
+        TanggalPersalinan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08-07-2022" }));
         TanggalPersalinan.setDisplayFormat("dd-MM-yyyy");
         TanggalPersalinan.setName("TanggalPersalinan"); // NOI18N
         TanggalPersalinan.setOpaque(false);
@@ -1455,7 +1482,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel53.setBounds(10, 80, 280, 23);
 
         TglAsuhan.setForeground(new java.awt.Color(50, 70, 50));
-        TglAsuhan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "07-07-2022 08:21:37" }));
+        TglAsuhan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08-07-2022 12:38:18" }));
         TglAsuhan.setDisplayFormat("dd-MM-yyyy HH:mm:ss");
         TglAsuhan.setName("TglAsuhan"); // NOI18N
         TglAsuhan.setOpaque(false);
@@ -1508,7 +1535,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel94.setText("III. RIWAYAT KESEHATAN");
         jLabel94.setName("jLabel94"); // NOI18N
         FormInput.add(jLabel94);
-        jLabel94.setBounds(20, 1530, 180, 23);
+        jLabel94.setBounds(20, 1820, 180, 23);
 
         Scroll6.setName("Scroll6"); // NOI18N
         Scroll6.setOpaque(true);
@@ -1548,12 +1575,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel119.setText("Riwayat Kebiasaan :");
         jLabel119.setName("jLabel119"); // NOI18N
         FormInput.add(jLabel119);
-        jLabel119.setBounds(10, 1560, 143, 23);
+        jLabel119.setBounds(10, 1850, 143, 23);
 
         jLabel120.setText("Obat/Vitamin :");
         jLabel120.setName("jLabel120"); // NOI18N
         FormInput.add(jLabel120);
-        jLabel120.setBounds(10, 1580, 170, 23);
+        jLabel120.setBounds(10, 1870, 170, 23);
 
         KebiasaanObat.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Obat Obatan", "Vitamin", "Jamu Jamuan" }));
         KebiasaanObat.setName("KebiasaanObat"); // NOI18N
@@ -1563,7 +1590,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KebiasaanObat);
-        KebiasaanObat.setBounds(180, 1580, 185, 23);
+        KebiasaanObat.setBounds(180, 1870, 185, 23);
 
         KebiasaanObatDiminum.setFocusTraversalPolicyProvider(true);
         KebiasaanObatDiminum.setName("KebiasaanObatDiminum"); // NOI18N
@@ -1573,13 +1600,13 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KebiasaanObatDiminum);
-        KebiasaanObatDiminum.setBounds(370, 1580, 491, 23);
+        KebiasaanObatDiminum.setBounds(370, 1870, 491, 23);
 
         jLabel121.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel121.setText("batang/hari");
         jLabel121.setName("jLabel121"); // NOI18N
         FormInput.add(jLabel121);
-        jLabel121.setBounds(330, 1610, 70, 23);
+        jLabel121.setBounds(330, 1900, 70, 23);
 
         KebiasaanMerokok.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
         KebiasaanMerokok.setName("KebiasaanMerokok"); // NOI18N
@@ -1589,7 +1616,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KebiasaanMerokok);
-        KebiasaanMerokok.setBounds(180, 1610, 80, 23);
+        KebiasaanMerokok.setBounds(180, 1900, 80, 23);
 
         KebiasaanJumlahRokok.setFocusTraversalPolicyProvider(true);
         KebiasaanJumlahRokok.setName("KebiasaanJumlahRokok"); // NOI18N
@@ -1599,20 +1626,20 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KebiasaanJumlahRokok);
-        KebiasaanJumlahRokok.setBounds(270, 1610, 60, 23);
+        KebiasaanJumlahRokok.setBounds(270, 1900, 60, 23);
 
         jLabel122.setText("Merokok :");
         jLabel122.setName("jLabel122"); // NOI18N
         FormInput.add(jLabel122);
-        jLabel122.setBounds(10, 1610, 170, 23);
+        jLabel122.setBounds(10, 1900, 170, 23);
 
         jLabel123.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel123.setText("gelas/hari");
         jLabel123.setName("jLabel123"); // NOI18N
         FormInput.add(jLabel123);
-        jLabel123.setBounds(610, 1610, 70, 23);
+        jLabel123.setBounds(610, 1900, 70, 23);
 
-        KebiasaanAlkohol.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
+        KebiasaanAlkohol.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Terus Menerus", "Hilang timbul" }));
         KebiasaanAlkohol.setName("KebiasaanAlkohol"); // NOI18N
         KebiasaanAlkohol.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -1620,7 +1647,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KebiasaanAlkohol);
-        KebiasaanAlkohol.setBounds(460, 1610, 80, 23);
+        KebiasaanAlkohol.setBounds(350, 1780, 130, 23);
 
         KebiasaanJumlahAlkohol.setFocusTraversalPolicyProvider(true);
         KebiasaanJumlahAlkohol.setName("KebiasaanJumlahAlkohol"); // NOI18N
@@ -1630,12 +1657,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KebiasaanJumlahAlkohol);
-        KebiasaanJumlahAlkohol.setBounds(540, 1610, 60, 23);
+        KebiasaanJumlahAlkohol.setBounds(540, 1900, 60, 23);
 
         jLabel124.setText("Alkohol :");
         jLabel124.setName("jLabel124"); // NOI18N
         FormInput.add(jLabel124);
-        jLabel124.setBounds(390, 1610, 65, 23);
+        jLabel124.setBounds(390, 1900, 65, 23);
 
         KebiasaanNarkoba.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
         KebiasaanNarkoba.setName("KebiasaanNarkoba"); // NOI18N
@@ -1645,19 +1672,19 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KebiasaanNarkoba);
-        KebiasaanNarkoba.setBounds(780, 1610, 80, 23);
+        KebiasaanNarkoba.setBounds(780, 1900, 80, 23);
 
         jLabel126.setText("Obat Tidur/Narkoba :");
         jLabel126.setName("jLabel126"); // NOI18N
         FormInput.add(jLabel126);
-        jLabel126.setBounds(660, 1610, 120, 23);
+        jLabel126.setBounds(660, 1900, 120, 23);
 
         jSeparator4.setBackground(new java.awt.Color(239, 244, 234));
         jSeparator4.setForeground(new java.awt.Color(239, 244, 234));
         jSeparator4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(239, 244, 234)));
         jSeparator4.setName("jSeparator4"); // NOI18N
         FormInput.add(jSeparator4);
-        jSeparator4.setBounds(10, 1640, 880, 1);
+        jSeparator4.setBounds(10, 1930, 880, 1);
 
         jLabel125.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel125.setText("5. FUNGSIONAL");
@@ -1704,20 +1731,13 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(CacatFisik);
-        CacatFisik.setBounds(240, 1350, 220, 23);
-
-        jSeparator5.setBackground(new java.awt.Color(239, 244, 234));
-        jSeparator5.setForeground(new java.awt.Color(239, 244, 234));
-        jSeparator5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(239, 244, 234)));
-        jSeparator5.setName("jSeparator5"); // NOI18N
-        FormInput.add(jSeparator5);
-        jSeparator5.setBounds(10, 1720, 880, 1);
+        CacatFisik.setBounds(270, 1560, 220, 23);
 
         jLabel131.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel131.setText("V. RIWAYAT PSIKO-SOSIAL, SPIRITUAL DAN BUDAYA");
         jLabel131.setName("jLabel131"); // NOI18N
         FormInput.add(jLabel131);
-        jLabel131.setBounds(20, 1720, 380, 23);
+        jLabel131.setBounds(20, 1940, 380, 23);
 
         StatusPsiko.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tenang", "Takut", "Cemas", "Depresi", "Lain-lain" }));
         StatusPsiko.setName("StatusPsiko"); // NOI18N
@@ -1727,7 +1747,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(StatusPsiko);
-        StatusPsiko.setBounds(140, 1740, 110, 23);
+        StatusPsiko.setBounds(140, 1960, 110, 23);
 
         KetPsiko.setFocusTraversalPolicyProvider(true);
         KetPsiko.setName("KetPsiko"); // NOI18N
@@ -1737,12 +1757,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KetPsiko);
-        KetPsiko.setBounds(260, 1740, 230, 23);
+        KetPsiko.setBounds(260, 1960, 230, 23);
 
         jLabel132.setText("Status Psikologis :");
         jLabel132.setName("jLabel132"); // NOI18N
         FormInput.add(jLabel132);
-        jLabel132.setBounds(10, 1740, 130, 23);
+        jLabel132.setBounds(10, 1960, 130, 23);
 
         Bahasa.setEditable(false);
         Bahasa.setFocusTraversalPolicyProvider(true);
@@ -1753,22 +1773,22 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(Bahasa);
-        Bahasa.setBounds(690, 1740, 170, 23);
+        Bahasa.setBounds(690, 1960, 170, 23);
 
         jLabel133.setText("Bahasa yang digunakan sehari-hari :");
         jLabel133.setName("jLabel133"); // NOI18N
         FormInput.add(jLabel133);
-        jLabel133.setBounds(460, 1740, 230, 23);
+        jLabel133.setBounds(460, 1960, 230, 23);
 
         jLabel134.setText("Status Sosial dan ekonomi :");
         jLabel134.setName("jLabel134"); // NOI18N
         FormInput.add(jLabel134);
-        jLabel134.setBounds(10, 1770, 176, 23);
+        jLabel134.setBounds(10, 1990, 176, 23);
 
         jLabel135.setText("a. Hubungan pasien dengan anggota keluarga :");
         jLabel135.setName("jLabel135"); // NOI18N
         FormInput.add(jLabel135);
-        jLabel135.setBounds(50, 1790, 250, 23);
+        jLabel135.setBounds(50, 2010, 250, 23);
 
         HubunganKeluarga.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Baik", "Tidak Baik" }));
         HubunganKeluarga.setName("HubunganKeluarga"); // NOI18N
@@ -1778,7 +1798,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(HubunganKeluarga);
-        HubunganKeluarga.setBounds(300, 1790, 100, 23);
+        HubunganKeluarga.setBounds(300, 2010, 100, 23);
 
         TinggalDengan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Sendiri", "Orang Tua", "Suami / Istri", "Lainnya" }));
         TinggalDengan.setName("TinggalDengan"); // NOI18N
@@ -1788,7 +1808,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(TinggalDengan);
-        TinggalDengan.setBounds(510, 1790, 110, 23);
+        TinggalDengan.setBounds(510, 2010, 110, 23);
 
         KetTinggal.setFocusTraversalPolicyProvider(true);
         KetTinggal.setName("KetTinggal"); // NOI18N
@@ -1798,12 +1818,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KetTinggal);
-        KetTinggal.setBounds(620, 1790, 85, 23);
+        KetTinggal.setBounds(620, 2010, 85, 23);
 
         jLabel136.setText("b. Tinggal dengan :");
         jLabel136.setName("jLabel136"); // NOI18N
         FormInput.add(jLabel136);
-        jLabel136.setBounds(400, 1790, 100, 23);
+        jLabel136.setBounds(400, 2010, 100, 23);
 
         Ekonomi.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Baik", "Cukup", "Kurang" }));
         Ekonomi.setName("Ekonomi"); // NOI18N
@@ -1813,17 +1833,17 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(Ekonomi);
-        Ekonomi.setBounds(780, 1790, 84, 23);
+        Ekonomi.setBounds(780, 2010, 84, 23);
 
         jLabel137.setText("c. Ekonomi :");
         jLabel137.setName("jLabel137"); // NOI18N
         FormInput.add(jLabel137);
-        jLabel137.setBounds(710, 1790, 71, 23);
+        jLabel137.setBounds(710, 2010, 71, 23);
 
         jLabel138.setText("Kepercayaan / Budaya / Nilai-nilai khusus yang perlu diperhatikan :");
         jLabel138.setName("jLabel138"); // NOI18N
         FormInput.add(jLabel138);
-        jLabel138.setBounds(10, 1820, 366, 23);
+        jLabel138.setBounds(10, 2040, 366, 23);
 
         StatusBudaya.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak Ada", "Ada" }));
         StatusBudaya.setName("StatusBudaya"); // NOI18N
@@ -1833,7 +1853,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(StatusBudaya);
-        StatusBudaya.setBounds(380, 1820, 110, 23);
+        StatusBudaya.setBounds(380, 2040, 110, 23);
 
         KetBudaya.setFocusTraversalPolicyProvider(true);
         KetBudaya.setName("KetBudaya"); // NOI18N
@@ -1843,12 +1863,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KetBudaya);
-        KetBudaya.setBounds(490, 1820, 370, 23);
+        KetBudaya.setBounds(490, 2040, 370, 23);
 
         jLabel139.setText("Edukasi diberikan kepada :");
         jLabel139.setName("jLabel139"); // NOI18N
         FormInput.add(jLabel139);
-        jLabel139.setBounds(240, 1850, 140, 23);
+        jLabel139.setBounds(240, 2070, 140, 23);
 
         Edukasi.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Pasien", "Keluarga" }));
         Edukasi.setName("Edukasi"); // NOI18N
@@ -1858,7 +1878,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(Edukasi);
-        Edukasi.setBounds(380, 1850, 110, 23);
+        Edukasi.setBounds(380, 2070, 110, 23);
 
         KetEdukasi.setFocusTraversalPolicyProvider(true);
         KetEdukasi.setName("KetEdukasi"); // NOI18N
@@ -1868,12 +1888,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(KetEdukasi);
-        KetEdukasi.setBounds(490, 1850, 370, 23);
+        KetEdukasi.setBounds(490, 2070, 370, 23);
 
         jLabel140.setText("Agama :");
         jLabel140.setName("jLabel140"); // NOI18N
         FormInput.add(jLabel140);
-        jLabel140.setBounds(10, 1850, 82, 23);
+        jLabel140.setBounds(10, 2070, 82, 23);
 
         Agama.setEditable(false);
         Agama.setFocusTraversalPolicyProvider(true);
@@ -1884,20 +1904,20 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(Agama);
-        Agama.setBounds(100, 1850, 110, 23);
+        Agama.setBounds(100, 2070, 110, 23);
 
         jSeparator6.setBackground(new java.awt.Color(239, 244, 234));
         jSeparator6.setForeground(new java.awt.Color(239, 244, 234));
         jSeparator6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(239, 244, 234)));
         jSeparator6.setName("jSeparator6"); // NOI18N
         FormInput.add(jSeparator6);
-        jSeparator6.setBounds(10, 1880, 880, 1);
+        jSeparator6.setBounds(10, 2100, 880, 1);
 
         jLabel141.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel141.setText("6. PENILAIAN RESIKO JATUH");
+        jLabel141.setText("7. ASESMEN NYERI");
         jLabel141.setName("jLabel141"); // NOI18N
         FormInput.add(jLabel141);
-        jLabel141.setBounds(30, 1390, 380, 23);
+        jLabel141.setBounds(30, 1540, 380, 23);
 
         jLabel142.setText("a. Cara Berjalan :");
         jLabel142.setName("jLabel142"); // NOI18N
@@ -1919,11 +1939,6 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(RJa1);
         RJa1.setBounds(310, 1430, 80, 23);
 
-        jLabel145.setText("b. Menopang saat akan duduk, tampak memegang pinggiran kursi atau meja / benda lain sebagai penopang :");
-        jLabel145.setName("jLabel145"); // NOI18N
-        FormInput.add(jLabel145);
-        jLabel145.setBounds(28, 1460, 571, 23);
-
         RJb.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
         RJb.setName("RJb"); // NOI18N
         RJb.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -1932,7 +1947,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(RJb);
-        RJb.setBounds(610, 1460, 80, 23);
+        RJb.setBounds(600, 1460, 80, 23);
 
         Hasil.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak beresiko (tidak ditemukan a dan b)", "Resiko rendah (ditemukan a/b)", "Resiko tinggi (ditemukan a dan b)" }));
         Hasil.setName("Hasil"); // NOI18N
@@ -2914,6 +2929,221 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jSeparator14);
         jSeparator14.setBounds(10, 935, 880, 1);
 
+        jLabel144.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel144.setText("6. ASESMEN RESIKO JATUH");
+        jLabel144.setName("jLabel144"); // NOI18N
+        FormInput.add(jLabel144);
+        jLabel144.setBounds(30, 1390, 380, 23);
+
+        jLabel147.setText("Nyeri :");
+        jLabel147.setName("jLabel147"); // NOI18N
+        FormInput.add(jLabel147);
+        jLabel147.setBounds(40, 1560, 60, 23);
+
+        RJa2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
+        RJa2.setName("RJa2"); // NOI18N
+        RJa2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                RJa2KeyPressed(evt);
+            }
+        });
+        FormInput.add(RJa2);
+        RJa2.setBounds(110, 1560, 80, 23);
+
+        CacatFisik1.setEditable(false);
+        CacatFisik1.setFocusTraversalPolicyProvider(true);
+        CacatFisik1.setName("CacatFisik1"); // NOI18N
+        CacatFisik1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                CacatFisik1KeyPressed(evt);
+            }
+        });
+        FormInput.add(CacatFisik1);
+        CacatFisik1.setBounds(240, 1350, 220, 23);
+
+        jLabel148.setText("Lokasi :");
+        jLabel148.setName("jLabel148"); // NOI18N
+        FormInput.add(jLabel148);
+        jLabel148.setBounds(200, 1560, 60, 23);
+
+        jLabel184.setText("Jenis :");
+        jLabel184.setName("jLabel184"); // NOI18N
+        FormInput.add(jLabel184);
+        jLabel184.setBounds(40, 1590, 60, 23);
+
+        RJa3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Akut", "Kronis" }));
+        RJa3.setName("RJa3"); // NOI18N
+        RJa3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                RJa3KeyPressed(evt);
+            }
+        });
+        FormInput.add(RJa3);
+        RJa3.setBounds(110, 1590, 80, 23);
+
+        CacatFisik2.setEditable(false);
+        CacatFisik2.setFocusTraversalPolicyProvider(true);
+        CacatFisik2.setName("CacatFisik2"); // NOI18N
+        CacatFisik2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                CacatFisik2KeyPressed(evt);
+            }
+        });
+        FormInput.add(CacatFisik2);
+        CacatFisik2.setBounds(580, 1560, 220, 23);
+
+        jLabel185.setText("Numerik :");
+        jLabel185.setName("jLabel185"); // NOI18N
+        FormInput.add(jLabel185);
+        jLabel185.setBounds(510, 1560, 60, 23);
+
+        CacatFisik3.setEditable(false);
+        CacatFisik3.setFocusTraversalPolicyProvider(true);
+        CacatFisik3.setName("CacatFisik3"); // NOI18N
+        CacatFisik3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                CacatFisik3KeyPressed(evt);
+            }
+        });
+        FormInput.add(CacatFisik3);
+        CacatFisik3.setBounds(580, 1590, 220, 23);
+
+        jLabel186.setText("Wong Beker :");
+        jLabel186.setName("jLabel186"); // NOI18N
+        FormInput.add(jLabel186);
+        jLabel186.setBounds(490, 1590, 80, 23);
+
+        jLabel187.setText("Flace :");
+        jLabel187.setName("jLabel187"); // NOI18N
+        FormInput.add(jLabel187);
+        jLabel187.setBounds(510, 1620, 60, 23);
+
+        CacatFisik4.setEditable(false);
+        CacatFisik4.setFocusTraversalPolicyProvider(true);
+        CacatFisik4.setName("CacatFisik4"); // NOI18N
+        CacatFisik4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                CacatFisik4KeyPressed(evt);
+            }
+        });
+        FormInput.add(CacatFisik4);
+        CacatFisik4.setBounds(580, 1620, 220, 23);
+
+        jLabel188.setText("b. Menopang saat akan duduk, tampak memegang pinggiran kursi atau meja / benda lain sebagai penopang :");
+        jLabel188.setName("jLabel188"); // NOI18N
+        FormInput.add(jLabel188);
+        jLabel188.setBounds(28, 1460, 571, 23);
+
+        jLabel189.setText("Provocation :");
+        jLabel189.setName("jLabel189"); // NOI18N
+        FormInput.add(jLabel189);
+        jLabel189.setBounds(30, 1780, 80, 23);
+
+        jLabel190.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel190.setText("Nyeri berlangsung");
+        jLabel190.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel190.setName("jLabel190"); // NOI18N
+        FormInput.add(jLabel190);
+        jLabel190.setBounds(120, 1780, 270, 23);
+
+        jLabel191.setText("Quality :");
+        jLabel191.setName("jLabel191"); // NOI18N
+        FormInput.add(jLabel191);
+        jLabel191.setBounds(30, 1690, 80, 23);
+
+        jLabel192.setText("Radiation :");
+        jLabel192.setName("jLabel192"); // NOI18N
+        FormInput.add(jLabel192);
+        jLabel192.setBounds(30, 1720, 80, 23);
+
+        jLabel193.setText("Provocation :");
+        jLabel193.setName("jLabel193"); // NOI18N
+        FormInput.add(jLabel193);
+        jLabel193.setBounds(30, 1750, 80, 23);
+
+        jLabel194.setText("Provocation :");
+        jLabel194.setName("jLabel194"); // NOI18N
+        FormInput.add(jLabel194);
+        jLabel194.setBounds(30, 1660, 80, 23);
+
+        jLabel195.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel195.setText("Faktor yang memperburuk rasa nyeri");
+        jLabel195.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel195.setName("jLabel195"); // NOI18N
+        FormInput.add(jLabel195);
+        jLabel195.setBounds(120, 1660, 270, 23);
+
+        jLabel196.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel196.setText("Rasa nyeri seperti");
+        jLabel196.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel196.setName("jLabel196"); // NOI18N
+        FormInput.add(jLabel196);
+        jLabel196.setBounds(120, 1690, 270, 23);
+
+        jLabel197.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel197.setText("Nyeri menjalar ke bagian tubuh yang lain");
+        jLabel197.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel197.setName("jLabel197"); // NOI18N
+        FormInput.add(jLabel197);
+        jLabel197.setBounds(120, 1720, 270, 23);
+
+        jLabel198.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel198.setText("Tingkat keparahan nyeri");
+        jLabel198.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel198.setName("jLabel198"); // NOI18N
+        FormInput.add(jLabel198);
+        jLabel198.setBounds(120, 1750, 270, 23);
+
+        KebiasaanAlkohol1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
+        KebiasaanAlkohol1.setName("KebiasaanAlkohol1"); // NOI18N
+        KebiasaanAlkohol1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                KebiasaanAlkohol1KeyPressed(evt);
+            }
+        });
+        FormInput.add(KebiasaanAlkohol1);
+        KebiasaanAlkohol1.setBounds(460, 1900, 80, 23);
+
+        KebiasaanAlkohol2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Cahaya", "Gelap", "Gerakan", "Berbaring", "Lainnya" }));
+        KebiasaanAlkohol2.setName("KebiasaanAlkohol2"); // NOI18N
+        KebiasaanAlkohol2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                KebiasaanAlkohol2KeyPressed(evt);
+            }
+        });
+        FormInput.add(KebiasaanAlkohol2);
+        KebiasaanAlkohol2.setBounds(350, 1660, 130, 23);
+
+        KebiasaanAlkohol3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ditusuk", "Dipukul", "Berdenyut", "Ditikam", "Kram", "Ditarik", "Dibakar", "Tajam", "Lainnya" }));
+        KebiasaanAlkohol3.setName("KebiasaanAlkohol3"); // NOI18N
+        KebiasaanAlkohol3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                KebiasaanAlkohol3KeyPressed(evt);
+            }
+        });
+        FormInput.add(KebiasaanAlkohol3);
+        KebiasaanAlkohol3.setBounds(350, 1690, 130, 23);
+
+        KebiasaanAlkohol4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
+        KebiasaanAlkohol4.setName("KebiasaanAlkohol4"); // NOI18N
+        KebiasaanAlkohol4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                KebiasaanAlkohol4KeyPressed(evt);
+            }
+        });
+        FormInput.add(KebiasaanAlkohol4);
+        KebiasaanAlkohol4.setBounds(350, 1720, 130, 23);
+
+        KebiasaanAlkohol5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak Nyeri", "Ringan", "Sedang", "Berat" }));
+        KebiasaanAlkohol5.setName("KebiasaanAlkohol5"); // NOI18N
+        KebiasaanAlkohol5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                KebiasaanAlkohol5KeyPressed(evt);
+            }
+        });
+        FormInput.add(KebiasaanAlkohol5);
+        KebiasaanAlkohol5.setBounds(350, 1750, 130, 23);
+
         scrollInput.setViewportView(FormInput);
 
         internalFrame2.add(scrollInput, java.awt.BorderLayout.CENTER);
@@ -2955,7 +3185,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         panelGlass9.add(jLabel19);
 
         DTPCari1.setForeground(new java.awt.Color(50, 70, 50));
-        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "07-07-2022" }));
+        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08-07-2022" }));
         DTPCari1.setDisplayFormat("dd-MM-yyyy");
         DTPCari1.setName("DTPCari1"); // NOI18N
         DTPCari1.setOpaque(false);
@@ -2969,7 +3199,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         panelGlass9.add(jLabel21);
 
         DTPCari2.setForeground(new java.awt.Color(50, 70, 50));
-        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "07-07-2022" }));
+        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "08-07-2022" }));
         DTPCari2.setDisplayFormat("dd-MM-yyyy");
         DTPCari2.setName("DTPCari2"); // NOI18N
         DTPCari2.setOpaque(false);
@@ -4436,6 +4666,50 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_AlatBantu1KeyPressed
 
+    private void RJa2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RJa2KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RJa2KeyPressed
+
+    private void CacatFisik1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CacatFisik1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CacatFisik1KeyPressed
+
+    private void RJa3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RJa3KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RJa3KeyPressed
+
+    private void CacatFisik2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CacatFisik2KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CacatFisik2KeyPressed
+
+    private void CacatFisik3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CacatFisik3KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CacatFisik3KeyPressed
+
+    private void CacatFisik4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CacatFisik4KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CacatFisik4KeyPressed
+
+    private void KebiasaanAlkohol1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KebiasaanAlkohol1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KebiasaanAlkohol1KeyPressed
+
+    private void KebiasaanAlkohol2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KebiasaanAlkohol2KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KebiasaanAlkohol2KeyPressed
+
+    private void KebiasaanAlkohol3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KebiasaanAlkohol3KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KebiasaanAlkohol3KeyPressed
+
+    private void KebiasaanAlkohol4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KebiasaanAlkohol4KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KebiasaanAlkohol4KeyPressed
+
+    private void KebiasaanAlkohol5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KebiasaanAlkohol5KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KebiasaanAlkohol5KeyPressed
+
     /**
     * @param args the command line arguments
     */
@@ -4474,6 +4748,10 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.Button BtnSimpanRiwayatKehamilan;
     private widget.Button BtnTambahMasalah;
     private widget.TextBox CacatFisik;
+    private widget.TextBox CacatFisik1;
+    private widget.TextBox CacatFisik2;
+    private widget.TextBox CacatFisik3;
+    private widget.TextBox CacatFisik4;
     private widget.CekBox ChkAccor;
     private widget.Tanggal DTPCari1;
     private widget.Tanggal DTPCari2;
@@ -4495,6 +4773,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.TextBox KdPetugas;
     private widget.TextBox Keadaan;
     private widget.ComboBox KebiasaanAlkohol;
+    private widget.ComboBox KebiasaanAlkohol1;
+    private widget.ComboBox KebiasaanAlkohol2;
+    private widget.ComboBox KebiasaanAlkohol3;
+    private widget.ComboBox KebiasaanAlkohol4;
+    private widget.ComboBox KebiasaanAlkohol5;
     private widget.TextBox KebiasaanJumlahAlkohol;
     private widget.TextBox KebiasaanJumlahRokok;
     private widget.ComboBox KebiasaanMerokok;
@@ -4541,6 +4824,8 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox Provokes;
     private widget.ComboBox Quality;
     private widget.ComboBox RJa1;
+    private widget.ComboBox RJa2;
+    private widget.ComboBox RJa3;
     private widget.ComboBox RJb;
     private widget.TextBox RR;
     private widget.ComboBox RiwayatKB;
@@ -4628,8 +4913,10 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.Label jLabel141;
     private widget.Label jLabel142;
     private widget.Label jLabel143;
-    private widget.Label jLabel145;
+    private widget.Label jLabel144;
     private widget.Label jLabel146;
+    private widget.Label jLabel147;
+    private widget.Label jLabel148;
     private widget.Label jLabel149;
     private widget.Label jLabel15;
     private widget.Label jLabel150;
@@ -4669,7 +4956,22 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.Label jLabel181;
     private widget.Label jLabel182;
     private widget.Label jLabel183;
+    private widget.Label jLabel184;
+    private widget.Label jLabel185;
+    private widget.Label jLabel186;
+    private widget.Label jLabel187;
+    private widget.Label jLabel188;
+    private widget.Label jLabel189;
     private widget.Label jLabel19;
+    private widget.Label jLabel190;
+    private widget.Label jLabel191;
+    private widget.Label jLabel192;
+    private widget.Label jLabel193;
+    private widget.Label jLabel194;
+    private widget.Label jLabel195;
+    private widget.Label jLabel196;
+    private widget.Label jLabel197;
+    private widget.Label jLabel198;
     private widget.Label jLabel20;
     private widget.Label jLabel21;
     private widget.Label jLabel22;
@@ -4724,7 +5026,6 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
