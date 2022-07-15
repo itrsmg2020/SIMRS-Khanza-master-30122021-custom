@@ -670,7 +670,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel180 = new widget.Label();
         jLabel181 = new widget.Label();
         KondisiPsikologis = new widget.ComboBox();
-        HPL1 = new widget.TextBox();
+        HPL = new widget.TextBox();
         jSeparator12 = new javax.swing.JSeparator();
         jLabel182 = new widget.Label();
         RiwayatMenstruasi = new widget.ComboBox();
@@ -679,13 +679,13 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel27 = new widget.Label();
         jLabel183 = new widget.Label();
         jLabel47 = new widget.Label();
-        TFU1 = new widget.TextBox();
+        Palpalasi = new widget.TextBox();
         jLabel66 = new widget.Label();
-        TFU2 = new widget.TextBox();
+        Leopold1 = new widget.TextBox();
         jLabel67 = new widget.Label();
-        TFU3 = new widget.TextBox();
+        Leopold2 = new widget.TextBox();
         jLabel68 = new widget.Label();
-        TFU4 = new widget.TextBox();
+        Leopold3 = new widget.TextBox();
         TFU5 = new widget.TextBox();
         jLabel69 = new widget.Label();
         jSeparator13 = new javax.swing.JSeparator();
@@ -693,11 +693,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel71 = new widget.Label();
         jLabel72 = new widget.Label();
         jLabel73 = new widget.Label();
-        TFU6 = new widget.TextBox();
+        Leopold4 = new widget.TextBox();
         jLabel74 = new widget.Label();
         jLabel75 = new widget.Label();
         RiwayatPengobatan = new widget.ComboBox();
-        TFU7 = new widget.TextBox();
+        Auskultasi = new widget.TextBox();
         TFU8 = new widget.TextBox();
         jLabel76 = new widget.Label();
         jLabel77 = new widget.Label();
@@ -1912,16 +1912,16 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(KondisiPsikologis);
         KondisiPsikologis.setBounds(160, 1000, 90, 23);
 
-        HPL1.setEditable(false);
-        HPL1.setName("HPL1"); // NOI18N
-        HPL1.setPreferredSize(new java.awt.Dimension(80, 23));
-        HPL1.addKeyListener(new java.awt.event.KeyAdapter() {
+        HPL.setEditable(false);
+        HPL.setName("HPL"); // NOI18N
+        HPL.setPreferredSize(new java.awt.Dimension(80, 23));
+        HPL.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                HPL1KeyPressed(evt);
+                HPLKeyPressed(evt);
             }
         });
-        FormInput.add(HPL1);
-        HPL1.setBounds(460, 340, 170, 23);
+        FormInput.add(HPL);
+        HPL.setBounds(460, 340, 170, 23);
 
         jSeparator12.setBackground(new java.awt.Color(239, 244, 234));
         jSeparator12.setForeground(new java.awt.Color(239, 244, 234));
@@ -1978,60 +1978,60 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jLabel47);
         jLabel47.setBounds(290, 660, 110, 23);
 
-        TFU1.setFocusTraversalPolicyProvider(true);
-        TFU1.setName("TFU1"); // NOI18N
-        TFU1.addKeyListener(new java.awt.event.KeyAdapter() {
+        Palpalasi.setFocusTraversalPolicyProvider(true);
+        Palpalasi.setName("Palpalasi"); // NOI18N
+        Palpalasi.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                TFU1KeyPressed(evt);
+                PalpalasiKeyPressed(evt);
             }
         });
-        FormInput.add(TFU1);
-        TFU1.setBounds(400, 660, 190, 23);
+        FormInput.add(Palpalasi);
+        Palpalasi.setBounds(400, 660, 190, 23);
 
         jLabel66.setText("Leopold I :");
         jLabel66.setName("jLabel66"); // NOI18N
         FormInput.add(jLabel66);
         jLabel66.setBounds(290, 690, 110, 23);
 
-        TFU2.setFocusTraversalPolicyProvider(true);
-        TFU2.setName("TFU2"); // NOI18N
-        TFU2.addKeyListener(new java.awt.event.KeyAdapter() {
+        Leopold1.setFocusTraversalPolicyProvider(true);
+        Leopold1.setName("Leopold1"); // NOI18N
+        Leopold1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                TFU2KeyPressed(evt);
+                Leopold1KeyPressed(evt);
             }
         });
-        FormInput.add(TFU2);
-        TFU2.setBounds(400, 690, 190, 23);
+        FormInput.add(Leopold1);
+        Leopold1.setBounds(400, 690, 190, 23);
 
         jLabel67.setText("Leopold II :");
         jLabel67.setName("jLabel67"); // NOI18N
         FormInput.add(jLabel67);
         jLabel67.setBounds(290, 720, 110, 23);
 
-        TFU3.setFocusTraversalPolicyProvider(true);
-        TFU3.setName("TFU3"); // NOI18N
-        TFU3.addKeyListener(new java.awt.event.KeyAdapter() {
+        Leopold2.setFocusTraversalPolicyProvider(true);
+        Leopold2.setName("Leopold2"); // NOI18N
+        Leopold2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                TFU3KeyPressed(evt);
+                Leopold2KeyPressed(evt);
             }
         });
-        FormInput.add(TFU3);
-        TFU3.setBounds(400, 720, 190, 23);
+        FormInput.add(Leopold2);
+        Leopold2.setBounds(400, 720, 190, 23);
 
         jLabel68.setText("Leopold III :");
         jLabel68.setName("jLabel68"); // NOI18N
         FormInput.add(jLabel68);
         jLabel68.setBounds(290, 750, 110, 23);
 
-        TFU4.setFocusTraversalPolicyProvider(true);
-        TFU4.setName("TFU4"); // NOI18N
-        TFU4.addKeyListener(new java.awt.event.KeyAdapter() {
+        Leopold3.setFocusTraversalPolicyProvider(true);
+        Leopold3.setName("Leopold3"); // NOI18N
+        Leopold3.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                TFU4KeyPressed(evt);
+                Leopold3KeyPressed(evt);
             }
         });
-        FormInput.add(TFU4);
-        TFU4.setBounds(400, 750, 190, 23);
+        FormInput.add(Leopold3);
+        Leopold3.setBounds(400, 750, 190, 23);
 
         TFU5.setFocusTraversalPolicyProvider(true);
         TFU5.setName("TFU5"); // NOI18N
@@ -2080,15 +2080,15 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jLabel73);
         jLabel73.setBounds(270, 870, 130, 23);
 
-        TFU6.setFocusTraversalPolicyProvider(true);
-        TFU6.setName("TFU6"); // NOI18N
-        TFU6.addKeyListener(new java.awt.event.KeyAdapter() {
+        Leopold4.setFocusTraversalPolicyProvider(true);
+        Leopold4.setName("Leopold4"); // NOI18N
+        Leopold4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                TFU6KeyPressed(evt);
+                Leopold4KeyPressed(evt);
             }
         });
-        FormInput.add(TFU6);
-        TFU6.setBounds(400, 780, 190, 23);
+        FormInput.add(Leopold4);
+        Leopold4.setBounds(400, 780, 190, 23);
 
         jLabel74.setText("Leopold IV :");
         jLabel74.setName("jLabel74"); // NOI18N
@@ -2110,15 +2110,15 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(RiwayatPengobatan);
         RiwayatPengobatan.setBounds(480, 410, 90, 23);
 
-        TFU7.setFocusTraversalPolicyProvider(true);
-        TFU7.setName("TFU7"); // NOI18N
-        TFU7.addKeyListener(new java.awt.event.KeyAdapter() {
+        Auskultasi.setFocusTraversalPolicyProvider(true);
+        Auskultasi.setName("Auskultasi"); // NOI18N
+        Auskultasi.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                TFU7KeyPressed(evt);
+                AuskultasiKeyPressed(evt);
             }
         });
-        FormInput.add(TFU7);
-        TFU7.setBounds(440, 810, 120, 23);
+        FormInput.add(Auskultasi);
+        Auskultasi.setBounds(440, 810, 120, 23);
 
         TFU8.setFocusTraversalPolicyProvider(true);
         TFU8.setName("TFU8"); // NOI18N
@@ -4150,9 +4150,9 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_KondisiPsikologisKeyPressed
 
-    private void HPL1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_HPL1KeyPressed
+    private void HPLKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_HPLKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_HPL1KeyPressed
+    }//GEN-LAST:event_HPLKeyPressed
 
     private void RiwayatMenstruasiKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RiwayatMenstruasiKeyPressed
         // TODO add your handling code here:
@@ -4162,37 +4162,37 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_KeluhanUtamaKeyPressed
 
-    private void TFU1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFU1KeyPressed
+    private void PalpalasiKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PalpalasiKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TFU1KeyPressed
+    }//GEN-LAST:event_PalpalasiKeyPressed
 
-    private void TFU2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFU2KeyPressed
+    private void Leopold1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Leopold1KeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TFU2KeyPressed
+    }//GEN-LAST:event_Leopold1KeyPressed
 
-    private void TFU3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFU3KeyPressed
+    private void Leopold2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Leopold2KeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TFU3KeyPressed
+    }//GEN-LAST:event_Leopold2KeyPressed
 
-    private void TFU4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFU4KeyPressed
+    private void Leopold3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Leopold3KeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TFU4KeyPressed
+    }//GEN-LAST:event_Leopold3KeyPressed
 
     private void TFU5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFU5KeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_TFU5KeyPressed
 
-    private void TFU6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFU6KeyPressed
+    private void Leopold4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Leopold4KeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TFU6KeyPressed
+    }//GEN-LAST:event_Leopold4KeyPressed
 
     private void RiwayatPengobatanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RiwayatPengobatanKeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_RiwayatPengobatanKeyPressed
 
-    private void TFU7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFU7KeyPressed
+    private void AuskultasiKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_AuskultasiKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TFU7KeyPressed
+    }//GEN-LAST:event_AuskultasiKeyPressed
 
     private void TFU8KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFU8KeyPressed
         // TODO add your handling code here:
@@ -4393,6 +4393,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widget.ComboBox AlatBantu;
     private widget.ComboBox AlatBantu1;
+    private widget.TextBox Auskultasi;
     private widget.TextBox BB;
     private widget.TextBox BBPB;
     private widget.Button BtnAll;
@@ -4428,7 +4429,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.PanelBiasa FormInput;
     private widget.PanelBiasa FormMasalahRencana;
     private widget.PanelBiasa FormMenu;
-    private widget.TextBox HPL1;
+    private widget.TextBox HPL;
     private widget.TextBox HPM;
     private widget.ComboBox Hasil;
     private widget.ComboBox Informasi;
@@ -4455,12 +4456,17 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox KondisiPsikologis5;
     private widget.Label LCount;
     private widget.TextBox LamaMenstruasi;
+    private widget.TextBox Leopold1;
+    private widget.TextBox Leopold2;
+    private widget.TextBox Leopold3;
+    private widget.TextBox Leopold4;
     private widget.editorpane LoadHTML;
     private widget.TextArea MasalahKebidanan;
     private widget.TextBox Nadi;
     private widget.ComboBox Nilai1;
     private widget.ComboBox Nilai2;
     private widget.TextBox NmPetugas;
+    private widget.TextBox Palpalasi;
     private widget.PanelBiasa PanelAccor;
     private usu.widget.glass.PanelGlass PanelWall;
     private widget.ComboBox PemeriksaanLain;
@@ -4499,17 +4505,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.TextBox TCari;
     private widget.TextBox TD;
     private widget.TextBox TFU;
-    private widget.TextBox TFU1;
     private widget.TextBox TFU10;
     private widget.TextBox TFU12;
     private widget.TextBox TFU13;
     private widget.TextBox TFU14;
-    private widget.TextBox TFU2;
-    private widget.TextBox TFU3;
-    private widget.TextBox TFU4;
     private widget.TextBox TFU5;
-    private widget.TextBox TFU6;
-    private widget.TextBox TFU7;
     private widget.TextBox TFU8;
     private widget.TextBox TFU9;
     private widget.TextBox TNoRM;
