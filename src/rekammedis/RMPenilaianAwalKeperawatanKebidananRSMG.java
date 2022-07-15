@@ -793,6 +793,10 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel211 = new widget.Label();
         jLabel212 = new widget.Label();
         SkalaNyeri4 = new widget.ComboBox();
+        SkalaNyeri5 = new widget.ComboBox();
+        SkalaNyeri11 = new widget.ComboBox();
+        SkalaNyeri12 = new widget.ComboBox();
+        SkalaNyeri13 = new widget.ComboBox();
         internalFrame3 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbObat = new widget.Table();
@@ -2825,7 +2829,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jLabel212);
         jLabel212.setBounds(0, 2460, 630, 23);
 
-        SkalaNyeri4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Diagnosa", "Obat-obatan", "Diet dan Nutrisi", "Perawatan Luka", "Manajemen Nyeri", "Lainnya" }));
+        SkalaNyeri4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
         SkalaNyeri4.setName("SkalaNyeri4"); // NOI18N
         SkalaNyeri4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -2833,7 +2837,47 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
             }
         });
         FormInput.add(SkalaNyeri4);
-        SkalaNyeri4.setBounds(160, 2270, 110, 23);
+        SkalaNyeri4.setBounds(220, 2430, 110, 23);
+
+        SkalaNyeri5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Diagnosa", "Obat-obatan", "Diet dan Nutrisi", "Perawatan Luka", "Manajemen Nyeri", "Lainnya" }));
+        SkalaNyeri5.setName("SkalaNyeri5"); // NOI18N
+        SkalaNyeri5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                SkalaNyeri5KeyPressed(evt);
+            }
+        });
+        FormInput.add(SkalaNyeri5);
+        SkalaNyeri5.setBounds(160, 2270, 110, 23);
+
+        SkalaNyeri11.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
+        SkalaNyeri11.setName("SkalaNyeri11"); // NOI18N
+        SkalaNyeri11.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                SkalaNyeri11KeyPressed(evt);
+            }
+        });
+        FormInput.add(SkalaNyeri11);
+        SkalaNyeri11.setBounds(220, 2340, 110, 23);
+
+        SkalaNyeri12.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
+        SkalaNyeri12.setName("SkalaNyeri12"); // NOI18N
+        SkalaNyeri12.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                SkalaNyeri12KeyPressed(evt);
+            }
+        });
+        FormInput.add(SkalaNyeri12);
+        SkalaNyeri12.setBounds(220, 2370, 110, 23);
+
+        SkalaNyeri13.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
+        SkalaNyeri13.setName("SkalaNyeri13"); // NOI18N
+        SkalaNyeri13.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                SkalaNyeri13KeyPressed(evt);
+            }
+        });
+        FormInput.add(SkalaNyeri13);
+        SkalaNyeri13.setBounds(220, 2400, 110, 23);
 
         scrollInput.setViewportView(FormInput);
 
@@ -4314,6 +4358,22 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_SkalaNyeri4KeyPressed
 
+    private void SkalaNyeri5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri5KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SkalaNyeri5KeyPressed
+
+    private void SkalaNyeri11KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri11KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SkalaNyeri11KeyPressed
+
+    private void SkalaNyeri12KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri12KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SkalaNyeri12KeyPressed
+
+    private void SkalaNyeri13KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri13KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SkalaNyeri13KeyPressed
+
     /**
     * @param args the command line arguments
     */
@@ -4423,9 +4483,13 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox SkalaNyeri;
     private widget.ComboBox SkalaNyeri1;
     private widget.ComboBox SkalaNyeri10;
+    private widget.ComboBox SkalaNyeri11;
+    private widget.ComboBox SkalaNyeri12;
+    private widget.ComboBox SkalaNyeri13;
     private widget.ComboBox SkalaNyeri2;
     private widget.ComboBox SkalaNyeri3;
     private widget.ComboBox SkalaNyeri4;
+    private widget.ComboBox SkalaNyeri5;
     private widget.ComboBox SkalaNyeri6;
     private widget.ComboBox SkalaNyeri7;
     private widget.ComboBox SkalaNyeri8;
