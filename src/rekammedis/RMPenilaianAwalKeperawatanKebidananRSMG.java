@@ -773,13 +773,13 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel205 = new widget.Label();
         jLabel206 = new widget.Label();
         DiagnosisBidan = new widget.ComboBox();
-        SkalaNyeri3 = new widget.ComboBox();
-        SkalaNyeri6 = new widget.ComboBox();
-        SkalaNyeri7 = new widget.ComboBox();
-        SkalaNyeri8 = new widget.ComboBox();
-        SkalaNyeri9 = new widget.ComboBox();
-        SkalaNyeri10 = new widget.ComboBox();
-        CacatFisik6 = new widget.TextBox();
+        Penterjemah = new widget.ComboBox();
+        Hambatan = new widget.ComboBox();
+        MetodeBelajar = new widget.ComboBox();
+        Pendidikan = new widget.ComboBox();
+        Bicara = new widget.ComboBox();
+        Bahasa = new widget.ComboBox();
+        RencanaAsuhan = new widget.TextBox();
         CacatFisik7 = new widget.TextBox();
         CacatFisik8 = new widget.TextBox();
         CacatFisik9 = new widget.TextBox();
@@ -792,11 +792,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel210 = new widget.Label();
         jLabel211 = new widget.Label();
         jLabel212 = new widget.Label();
-        SkalaNyeri4 = new widget.ComboBox();
-        SkalaNyeri5 = new widget.ComboBox();
-        SkalaNyeri11 = new widget.ComboBox();
-        SkalaNyeri12 = new widget.ComboBox();
-        SkalaNyeri13 = new widget.ComboBox();
+        Bantuan = new widget.ComboBox();
+        Edukasi = new widget.ComboBox();
+        Umur = new widget.ComboBox();
+        Keterbatasan = new widget.ComboBox();
+        Perawatan = new widget.ComboBox();
         internalFrame3 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbObat = new widget.Table();
@@ -2660,76 +2660,76 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(DiagnosisBidan);
         DiagnosisBidan.setBounds(170, 2000, 190, 23);
 
-        SkalaNyeri3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Iya", "Isyarat" }));
-        SkalaNyeri3.setName("SkalaNyeri3"); // NOI18N
-        SkalaNyeri3.addKeyListener(new java.awt.event.KeyAdapter() {
+        Penterjemah.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Iya", "Isyarat" }));
+        Penterjemah.setName("Penterjemah"); // NOI18N
+        Penterjemah.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri3KeyPressed(evt);
+                PenterjemahKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri3);
-        SkalaNyeri3.setBounds(160, 2150, 110, 23);
+        FormInput.add(Penterjemah);
+        Penterjemah.setBounds(160, 2150, 110, 23);
 
-        SkalaNyeri6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ada" }));
-        SkalaNyeri6.setName("SkalaNyeri6"); // NOI18N
-        SkalaNyeri6.addKeyListener(new java.awt.event.KeyAdapter() {
+        Hambatan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ada" }));
+        Hambatan.setName("Hambatan"); // NOI18N
+        Hambatan.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri6KeyPressed(evt);
+                HambatanKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri6);
-        SkalaNyeri6.setBounds(160, 2180, 110, 23);
+        FormInput.add(Hambatan);
+        Hambatan.setBounds(160, 2180, 110, 23);
 
-        SkalaNyeri7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Audio", "Visual", "Lainnya" }));
-        SkalaNyeri7.setName("SkalaNyeri7"); // NOI18N
-        SkalaNyeri7.addKeyListener(new java.awt.event.KeyAdapter() {
+        MetodeBelajar.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Audio", "Visual", "Lainnya" }));
+        MetodeBelajar.setName("MetodeBelajar"); // NOI18N
+        MetodeBelajar.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri7KeyPressed(evt);
+                MetodeBelajarKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri7);
-        SkalaNyeri7.setBounds(160, 2210, 110, 23);
+        FormInput.add(MetodeBelajar);
+        MetodeBelajar.setBounds(160, 2210, 110, 23);
 
-        SkalaNyeri8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "SD", "SMP", "Lainnya" }));
-        SkalaNyeri8.setName("SkalaNyeri8"); // NOI18N
-        SkalaNyeri8.addKeyListener(new java.awt.event.KeyAdapter() {
+        Pendidikan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "SD", "SMP", "Lainnya" }));
+        Pendidikan.setName("Pendidikan"); // NOI18N
+        Pendidikan.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri8KeyPressed(evt);
+                PendidikanKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri8);
-        SkalaNyeri8.setBounds(160, 2240, 110, 23);
+        FormInput.add(Pendidikan);
+        Pendidikan.setBounds(160, 2240, 110, 23);
 
-        SkalaNyeri9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Normal", "Gangguan" }));
-        SkalaNyeri9.setName("SkalaNyeri9"); // NOI18N
-        SkalaNyeri9.addKeyListener(new java.awt.event.KeyAdapter() {
+        Bicara.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Normal", "Gangguan" }));
+        Bicara.setName("Bicara"); // NOI18N
+        Bicara.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri9KeyPressed(evt);
+                BicaraKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri9);
-        SkalaNyeri9.setBounds(160, 2090, 110, 23);
+        FormInput.add(Bicara);
+        Bicara.setBounds(160, 2090, 110, 23);
 
-        SkalaNyeri10.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Indonesia", "Inggris", "Lainnya" }));
-        SkalaNyeri10.setName("SkalaNyeri10"); // NOI18N
-        SkalaNyeri10.addKeyListener(new java.awt.event.KeyAdapter() {
+        Bahasa.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Indonesia", "Inggris", "Lainnya" }));
+        Bahasa.setName("Bahasa"); // NOI18N
+        Bahasa.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri10KeyPressed(evt);
+                BahasaKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri10);
-        SkalaNyeri10.setBounds(160, 2120, 110, 23);
+        FormInput.add(Bahasa);
+        Bahasa.setBounds(160, 2120, 110, 23);
 
-        CacatFisik6.setEditable(false);
-        CacatFisik6.setFocusTraversalPolicyProvider(true);
-        CacatFisik6.setName("CacatFisik6"); // NOI18N
-        CacatFisik6.addKeyListener(new java.awt.event.KeyAdapter() {
+        RencanaAsuhan.setEditable(false);
+        RencanaAsuhan.setFocusTraversalPolicyProvider(true);
+        RencanaAsuhan.setName("RencanaAsuhan"); // NOI18N
+        RencanaAsuhan.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                CacatFisik6KeyPressed(evt);
+                RencanaAsuhanKeyPressed(evt);
             }
         });
-        FormInput.add(CacatFisik6);
-        CacatFisik6.setBounds(170, 2030, 220, 23);
+        FormInput.add(RencanaAsuhan);
+        RencanaAsuhan.setBounds(170, 2030, 220, 23);
 
         CacatFisik7.setEditable(false);
         CacatFisik7.setFocusTraversalPolicyProvider(true);
@@ -2829,55 +2829,55 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jLabel212);
         jLabel212.setBounds(0, 2460, 630, 23);
 
-        SkalaNyeri4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
-        SkalaNyeri4.setName("SkalaNyeri4"); // NOI18N
-        SkalaNyeri4.addKeyListener(new java.awt.event.KeyAdapter() {
+        Bantuan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
+        Bantuan.setName("Bantuan"); // NOI18N
+        Bantuan.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri4KeyPressed(evt);
+                BantuanKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri4);
-        SkalaNyeri4.setBounds(220, 2430, 110, 23);
+        FormInput.add(Bantuan);
+        Bantuan.setBounds(220, 2430, 110, 23);
 
-        SkalaNyeri5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Diagnosa", "Obat-obatan", "Diet dan Nutrisi", "Perawatan Luka", "Manajemen Nyeri", "Lainnya" }));
-        SkalaNyeri5.setName("SkalaNyeri5"); // NOI18N
-        SkalaNyeri5.addKeyListener(new java.awt.event.KeyAdapter() {
+        Edukasi.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Diagnosa", "Obat-obatan", "Diet dan Nutrisi", "Perawatan Luka", "Manajemen Nyeri", "Lainnya" }));
+        Edukasi.setName("Edukasi"); // NOI18N
+        Edukasi.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri5KeyPressed(evt);
+                EdukasiKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri5);
-        SkalaNyeri5.setBounds(160, 2270, 110, 23);
+        FormInput.add(Edukasi);
+        Edukasi.setBounds(160, 2270, 110, 23);
 
-        SkalaNyeri11.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
-        SkalaNyeri11.setName("SkalaNyeri11"); // NOI18N
-        SkalaNyeri11.addKeyListener(new java.awt.event.KeyAdapter() {
+        Umur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
+        Umur.setName("Umur"); // NOI18N
+        Umur.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri11KeyPressed(evt);
+                UmurKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri11);
-        SkalaNyeri11.setBounds(220, 2340, 110, 23);
+        FormInput.add(Umur);
+        Umur.setBounds(220, 2340, 110, 23);
 
-        SkalaNyeri12.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
-        SkalaNyeri12.setName("SkalaNyeri12"); // NOI18N
-        SkalaNyeri12.addKeyListener(new java.awt.event.KeyAdapter() {
+        Keterbatasan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
+        Keterbatasan.setName("Keterbatasan"); // NOI18N
+        Keterbatasan.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri12KeyPressed(evt);
+                KeterbatasanKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri12);
-        SkalaNyeri12.setBounds(220, 2370, 110, 23);
+        FormInput.add(Keterbatasan);
+        Keterbatasan.setBounds(220, 2370, 110, 23);
 
-        SkalaNyeri13.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
-        SkalaNyeri13.setName("SkalaNyeri13"); // NOI18N
-        SkalaNyeri13.addKeyListener(new java.awt.event.KeyAdapter() {
+        Perawatan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ya", "Tidak" }));
+        Perawatan.setName("Perawatan"); // NOI18N
+        Perawatan.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                SkalaNyeri13KeyPressed(evt);
+                PerawatanKeyPressed(evt);
             }
         });
-        FormInput.add(SkalaNyeri13);
-        SkalaNyeri13.setBounds(220, 2400, 110, 23);
+        FormInput.add(Perawatan);
+        Perawatan.setBounds(220, 2400, 110, 23);
 
         scrollInput.setViewportView(FormInput);
 
@@ -4306,33 +4306,33 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_DiagnosisBidanKeyPressed
 
-    private void SkalaNyeri3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri3KeyPressed
+    private void PenterjemahKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PenterjemahKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri3KeyPressed
+    }//GEN-LAST:event_PenterjemahKeyPressed
 
-    private void SkalaNyeri6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri6KeyPressed
+    private void HambatanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_HambatanKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri6KeyPressed
+    }//GEN-LAST:event_HambatanKeyPressed
 
-    private void SkalaNyeri7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri7KeyPressed
+    private void MetodeBelajarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MetodeBelajarKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri7KeyPressed
+    }//GEN-LAST:event_MetodeBelajarKeyPressed
 
-    private void SkalaNyeri8KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri8KeyPressed
+    private void PendidikanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PendidikanKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri8KeyPressed
+    }//GEN-LAST:event_PendidikanKeyPressed
 
-    private void SkalaNyeri9KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri9KeyPressed
+    private void BicaraKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BicaraKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri9KeyPressed
+    }//GEN-LAST:event_BicaraKeyPressed
 
-    private void SkalaNyeri10KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri10KeyPressed
+    private void BahasaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BahasaKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri10KeyPressed
+    }//GEN-LAST:event_BahasaKeyPressed
 
-    private void CacatFisik6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CacatFisik6KeyPressed
+    private void RencanaAsuhanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RencanaAsuhanKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CacatFisik6KeyPressed
+    }//GEN-LAST:event_RencanaAsuhanKeyPressed
 
     private void CacatFisik7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CacatFisik7KeyPressed
         // TODO add your handling code here:
@@ -4354,25 +4354,25 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_CacatFisik11KeyPressed
 
-    private void SkalaNyeri4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri4KeyPressed
+    private void BantuanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BantuanKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri4KeyPressed
+    }//GEN-LAST:event_BantuanKeyPressed
 
-    private void SkalaNyeri5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri5KeyPressed
+    private void EdukasiKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_EdukasiKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri5KeyPressed
+    }//GEN-LAST:event_EdukasiKeyPressed
 
-    private void SkalaNyeri11KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri11KeyPressed
+    private void UmurKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_UmurKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri11KeyPressed
+    }//GEN-LAST:event_UmurKeyPressed
 
-    private void SkalaNyeri12KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri12KeyPressed
+    private void KeterbatasanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KeterbatasanKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri12KeyPressed
+    }//GEN-LAST:event_KeterbatasanKeyPressed
 
-    private void SkalaNyeri13KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SkalaNyeri13KeyPressed
+    private void PerawatanKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PerawatanKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SkalaNyeri13KeyPressed
+    }//GEN-LAST:event_PerawatanKeyPressed
 
     /**
     * @param args the command line arguments
@@ -4397,6 +4397,9 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.TextBox Auskultasi;
     private widget.TextBox BB;
     private widget.TextBox BBPB;
+    private widget.ComboBox Bahasa;
+    private widget.ComboBox Bantuan;
+    private widget.ComboBox Bicara;
     private widget.Button BtnAll;
     private widget.Button BtnBatal;
     private widget.Button BtnCari;
@@ -4414,7 +4417,6 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.TextBox CacatFisik10;
     private widget.TextBox CacatFisik11;
     private widget.TextBox CacatFisik4;
-    private widget.TextBox CacatFisik6;
     private widget.TextBox CacatFisik7;
     private widget.TextBox CacatFisik8;
     private widget.TextBox CacatFisik9;
@@ -4424,12 +4426,14 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.Tanggal DTPCari2;
     private widget.ComboBox DiagnosisBidan;
     private javax.swing.JDialog DlgRiwayatPersalinan;
+    private widget.ComboBox Edukasi;
     private widget.TextBox Flace;
     private widget.PanelBiasa FormInput;
     private widget.PanelBiasa FormMasalahRencana;
     private widget.PanelBiasa FormMenu;
     private widget.TextBox HPL;
     private widget.TextBox HPM;
+    private widget.ComboBox Hambatan;
     private widget.ComboBox HasilRJ;
     private widget.ComboBox Informasi;
     private widget.ComboBox JK;
@@ -4443,6 +4447,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.TextBox KetBantu;
     private widget.TextBox KetCacat;
     private widget.TextBox KetRiwayatObatMakanan;
+    private widget.ComboBox Keterbatasan;
     private widget.Label LCount;
     private widget.TextBox LamaMenstruasi;
     private widget.ComboBox LamaNyeri;
@@ -4453,6 +4458,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.editorpane LoadHTML;
     private widget.TextBox LokasiNyeri;
     private widget.TextArea MasalahKebidanan;
+    private widget.ComboBox MetodeBelajar;
     private widget.TextBox Nadi;
     private widget.ComboBox Nilai1;
     private widget.ComboBox Nilai2;
@@ -4467,8 +4473,11 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox Pekerjaan;
     private widget.TextBox PekerjaanLain;
     private widget.ComboBox PemeriksaanLain;
+    private widget.ComboBox Pendidikan;
     private widget.TextBox Penolong;
+    private widget.ComboBox Penterjemah;
     private widget.TextBox Penyulit;
+    private widget.ComboBox Perawatan;
     private widget.ComboBox Perikahan;
     private widget.ComboBox Perilaku;
     private widget.ComboBox Provocation;
@@ -4478,6 +4487,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox RJb;
     private widget.TextBox RR;
     private widget.ComboBox Radiation;
+    private widget.TextBox RencanaAsuhan;
     private widget.ComboBox RencanaPulang;
     private widget.ComboBox RiwayatKB;
     private widget.ComboBox RiwayatMenstruasi;
@@ -4491,17 +4501,6 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox Severity;
     private widget.TextBox Siklus;
     private widget.ComboBox SkalaNyeri;
-    private widget.ComboBox SkalaNyeri10;
-    private widget.ComboBox SkalaNyeri11;
-    private widget.ComboBox SkalaNyeri12;
-    private widget.ComboBox SkalaNyeri13;
-    private widget.ComboBox SkalaNyeri3;
-    private widget.ComboBox SkalaNyeri4;
-    private widget.ComboBox SkalaNyeri5;
-    private widget.ComboBox SkalaNyeri6;
-    private widget.ComboBox SkalaNyeri7;
-    private widget.ComboBox SkalaNyeri8;
-    private widget.ComboBox SkalaNyeri9;
     private widget.TextBox Suhu;
     private widget.TextBox TB;
     private widget.TextBox TCari;
@@ -4521,6 +4520,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox Tinggal;
     private widget.TextBox TinggalLain;
     private widget.TextBox TotalHasil;
+    private widget.ComboBox Umur;
     private widget.TextBox Uodema1;
     private widget.TextBox Uodema2;
     private widget.TextBox UsiaHamil;
