@@ -736,7 +736,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         KetCacat = new widget.TextBox();
         jLabel148 = new widget.Label();
         jLabel184 = new widget.Label();
-        RJa3 = new widget.ComboBox();
+        JenisNyeri = new widget.ComboBox();
         Numerik = new widget.TextBox();
         jLabel185 = new widget.Label();
         WongBeker = new widget.TextBox();
@@ -754,9 +754,9 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel196 = new widget.Label();
         jLabel197 = new widget.Label();
         jLabel198 = new widget.Label();
-        KebiasaanAlkohol2 = new widget.ComboBox();
-        KebiasaanAlkohol3 = new widget.ComboBox();
-        KebiasaanAlkohol4 = new widget.ComboBox();
+        Provocation = new widget.ComboBox();
+        Quality = new widget.ComboBox();
+        Radiation = new widget.ComboBox();
         KebiasaanAlkohol5 = new widget.ComboBox();
         jLabel199 = new widget.Label();
         KebiasaanAlkohol6 = new widget.ComboBox();
@@ -841,7 +841,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         panelBiasa2.setLayout(null);
 
         TanggalPersalinan.setForeground(new java.awt.Color(50, 70, 50));
-        TanggalPersalinan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "16-07-2022" }));
+        TanggalPersalinan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "19-07-2022" }));
         TanggalPersalinan.setDisplayFormat("dd-MM-yyyy");
         TanggalPersalinan.setName("TanggalPersalinan"); // NOI18N
         TanggalPersalinan.setOpaque(false);
@@ -1416,7 +1416,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         jLabel53.setBounds(10, 80, 280, 23);
 
         TglAsuhan.setForeground(new java.awt.Color(50, 70, 50));
-        TglAsuhan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "16-07-2022 07:53:52" }));
+        TglAsuhan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "19-07-2022 14:14:39" }));
         TglAsuhan.setDisplayFormat("dd-MM-yyyy HH:mm:ss");
         TglAsuhan.setName("TglAsuhan"); // NOI18N
         TglAsuhan.setOpaque(false);
@@ -2392,15 +2392,15 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jLabel184);
         jLabel184.setBounds(40, 1590, 60, 23);
 
-        RJa3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Akut", "Kronis" }));
-        RJa3.setName("RJa3"); // NOI18N
-        RJa3.addKeyListener(new java.awt.event.KeyAdapter() {
+        JenisNyeri.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Akut", "Kronis" }));
+        JenisNyeri.setName("JenisNyeri"); // NOI18N
+        JenisNyeri.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                RJa3KeyPressed(evt);
+                JenisNyeriKeyPressed(evt);
             }
         });
-        FormInput.add(RJa3);
-        RJa3.setBounds(110, 1590, 80, 23);
+        FormInput.add(JenisNyeri);
+        JenisNyeri.setBounds(110, 1590, 80, 23);
 
         Numerik.setEditable(false);
         Numerik.setFocusTraversalPolicyProvider(true);
@@ -2477,7 +2477,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jLabel192);
         jLabel192.setBounds(30, 1720, 80, 23);
 
-        jLabel193.setText("Provocation :");
+        jLabel193.setText("Severity :");
         jLabel193.setName("jLabel193"); // NOI18N
         FormInput.add(jLabel193);
         jLabel193.setBounds(30, 1750, 80, 23);
@@ -2515,35 +2515,35 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(jLabel198);
         jLabel198.setBounds(120, 1750, 210, 23);
 
-        KebiasaanAlkohol2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Cahaya", "Gelap", "Gerakan", "Berbaring", "Lainnya" }));
-        KebiasaanAlkohol2.setName("KebiasaanAlkohol2"); // NOI18N
-        KebiasaanAlkohol2.addKeyListener(new java.awt.event.KeyAdapter() {
+        Provocation.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Cahaya", "Gelap", "Gerakan", "Berbaring", "Lainnya" }));
+        Provocation.setName("Provocation"); // NOI18N
+        Provocation.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                KebiasaanAlkohol2KeyPressed(evt);
+                ProvocationKeyPressed(evt);
             }
         });
-        FormInput.add(KebiasaanAlkohol2);
-        KebiasaanAlkohol2.setBounds(350, 1660, 130, 23);
+        FormInput.add(Provocation);
+        Provocation.setBounds(350, 1660, 130, 23);
 
-        KebiasaanAlkohol3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ditusuk", "Dipukul", "Berdenyut", "Ditikam", "Kram", "Ditarik", "Dibakar", "Tajam", "Lainnya" }));
-        KebiasaanAlkohol3.setName("KebiasaanAlkohol3"); // NOI18N
-        KebiasaanAlkohol3.addKeyListener(new java.awt.event.KeyAdapter() {
+        Quality.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "Ditusuk", "Dipukul", "Berdenyut", "Ditikam", "Kram", "Ditarik", "Dibakar", "Tajam", "Lainnya" }));
+        Quality.setName("Quality"); // NOI18N
+        Quality.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                KebiasaanAlkohol3KeyPressed(evt);
+                QualityKeyPressed(evt);
             }
         });
-        FormInput.add(KebiasaanAlkohol3);
-        KebiasaanAlkohol3.setBounds(350, 1690, 130, 23);
+        FormInput.add(Quality);
+        Quality.setBounds(350, 1690, 130, 23);
 
-        KebiasaanAlkohol4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
-        KebiasaanAlkohol4.setName("KebiasaanAlkohol4"); // NOI18N
-        KebiasaanAlkohol4.addKeyListener(new java.awt.event.KeyAdapter() {
+        Radiation.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
+        Radiation.setName("Radiation"); // NOI18N
+        Radiation.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                KebiasaanAlkohol4KeyPressed(evt);
+                RadiationKeyPressed(evt);
             }
         });
-        FormInput.add(KebiasaanAlkohol4);
-        KebiasaanAlkohol4.setBounds(350, 1720, 130, 23);
+        FormInput.add(Radiation);
+        Radiation.setBounds(350, 1720, 130, 23);
 
         KebiasaanAlkohol5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak Nyeri", "Ringan", "Sedang", "Berat" }));
         KebiasaanAlkohol5.setName("KebiasaanAlkohol5"); // NOI18N
@@ -2555,7 +2555,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         FormInput.add(KebiasaanAlkohol5);
         KebiasaanAlkohol5.setBounds(350, 1750, 130, 23);
 
-        jLabel199.setText("Provocation :");
+        jLabel199.setText("Time :");
         jLabel199.setName("jLabel199"); // NOI18N
         FormInput.add(jLabel199);
         jLabel199.setBounds(30, 1780, 80, 23);
@@ -2920,7 +2920,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         panelGlass9.add(jLabel19);
 
         DTPCari1.setForeground(new java.awt.Color(50, 70, 50));
-        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "16-07-2022" }));
+        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "19-07-2022" }));
         DTPCari1.setDisplayFormat("dd-MM-yyyy");
         DTPCari1.setName("DTPCari1"); // NOI18N
         DTPCari1.setOpaque(false);
@@ -2934,7 +2934,7 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         panelGlass9.add(jLabel21);
 
         DTPCari2.setForeground(new java.awt.Color(50, 70, 50));
-        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "16-07-2022" }));
+        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "19-07-2022" }));
         DTPCari2.setDisplayFormat("dd-MM-yyyy");
         DTPCari2.setName("DTPCari2"); // NOI18N
         DTPCari2.setOpaque(false);
@@ -4254,9 +4254,9 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_KetCacatKeyPressed
 
-    private void RJa3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RJa3KeyPressed
+    private void JenisNyeriKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JenisNyeriKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_RJa3KeyPressed
+    }//GEN-LAST:event_JenisNyeriKeyPressed
 
     private void NumerikKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NumerikKeyPressed
         // TODO add your handling code here:
@@ -4270,17 +4270,17 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_CacatFisik4KeyPressed
 
-    private void KebiasaanAlkohol2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KebiasaanAlkohol2KeyPressed
+    private void ProvocationKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ProvocationKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_KebiasaanAlkohol2KeyPressed
+    }//GEN-LAST:event_ProvocationKeyPressed
 
-    private void KebiasaanAlkohol3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KebiasaanAlkohol3KeyPressed
+    private void QualityKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_QualityKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_KebiasaanAlkohol3KeyPressed
+    }//GEN-LAST:event_QualityKeyPressed
 
-    private void KebiasaanAlkohol4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KebiasaanAlkohol4KeyPressed
+    private void RadiationKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RadiationKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_KebiasaanAlkohol4KeyPressed
+    }//GEN-LAST:event_RadiationKeyPressed
 
     private void KebiasaanAlkohol5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KebiasaanAlkohol5KeyPressed
         // TODO add your handling code here:
@@ -4432,14 +4432,12 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.ComboBox HasilRJ;
     private widget.ComboBox Informasi;
     private widget.ComboBox JK;
+    private widget.ComboBox JenisNyeri;
     private widget.TextBox JenisPersalinan;
     private widget.TextBox Jk;
     private widget.TextBox KdPetugas;
     private widget.TextBox Keadaan;
     private widget.ComboBox KebiasaanAlkohol;
-    private widget.ComboBox KebiasaanAlkohol2;
-    private widget.ComboBox KebiasaanAlkohol3;
-    private widget.ComboBox KebiasaanAlkohol4;
     private widget.ComboBox KebiasaanAlkohol5;
     private widget.ComboBox KebiasaanAlkohol6;
     private widget.TextBox Keluhan;
@@ -4474,11 +4472,13 @@ public final class RMPenilaianAwalKeperawatanKebidananRSMG extends javax.swing.J
     private widget.TextBox Penyulit;
     private widget.ComboBox Perikahan;
     private widget.ComboBox Perilaku;
+    private widget.ComboBox Provocation;
     private widget.ComboBox Psikologis;
+    private widget.ComboBox Quality;
     private widget.ComboBox RJa1;
-    private widget.ComboBox RJa3;
     private widget.ComboBox RJb;
     private widget.TextBox RR;
+    private widget.ComboBox Radiation;
     private widget.ComboBox RiwayatKB;
     private widget.ComboBox RiwayatMenstruasi;
     private widget.ComboBox RiwayatObatMakanan;
